@@ -1,12 +1,160 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        PINK
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="menu-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <article class="app-download">
+      <div class="app-download__header">
+      </div>
+      <div class="app-download-type">
+        <a class="btn app-download-btn">Скачать приложение</a>
+        <ul class="app-download-type__list">
+          <li class="app-download-type__item">
+            <a class="app-download-type__link">
+              <span class="visually-hidden">Apple</span>
+            </a>
+            <a class="app-download-type__link">
+              <span class="visually-hidden">Android</span>
+            </a>
+            <a class="app-download-type__link">
+              <span class="visually-hidden">Windows Phone</span>
+            </a>
+          </li>
+        </ul>
+        <h3 class="app-download-type__title">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</h3>
+      </div>
+    </article>
+    <section class="advantages">
+      <div class="advantages__header">
+        <p class="advantages__slogan">Устали от серости мегаполиса?
+        </p>
+        <p class="advantages__slogan">Нам есть, что вам предложить!
+        </p>
+      </div>
+      <div class="advantages__item">
+        <h3 class="advantages__title">Поднимает настроение
+          </h3>
+        <p class="avantages__content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+        </p>
+      </div>
+      <div class="advantages__item">
+        <h3 class="advantages__title">Меняет мир вокруг
+          </h3>
+        <p class="avantages__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+        </p>
+      </div>
+      <div class="advantages__item">
+        <h3 class="advantages__title">Заводит новых друзей
+          </h3>
+        <p class="avantages__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+        </p>
+      </div>
+    </section>
+    <div class="reviews">
+      <div class="reviews__wrapper slider">
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+        <blockquote class="reviews__item">
+          <cite class="reviews__author-name">Николай Петров</cite>
+          <p class="reviews__author-content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+        <label class="reviews__toggles slider__toggles" for="reviews-input-1">
+        </label>
+        <label class="reviews__toggles slider__toggles" for="reviews-input-2">
+        </label>
+        <label class="reviews__toggles slider__toggles" for="reviews-input-3">
+        </label>
+      </div>
+    </div>
+    <div class="price">
+      <div class="price__wrapper slider">
+        <input class="slider__input" type="radio" name="reviews" id="price-input-1">
+        <input class="slider__input" type="radio" name="reviews" id="price-input-2" checked>
+        <input class="slider__input" type="radio" name="reviews" id="price-input-3">
+      </div>
+      <div class="price__items">
+        <table class="price__item">
+          <tr class="price__item-row">
+            <th class="price__item-head">Стандарт
+              <br>
+              <br><span>3,99 USD</span></th>
+          </tr>
+          <tr class="price__item-row">
+            <td class="price__item-futures">Розовый фильтр</td>
+          </tr>
+          <tr class="price__item-row">
+            <td class="price__item-futures">Смайлики</td>
+          </tr>
+          <tr class="price__item-row">
+            <td class="price__item-futures">Комментарии</td>
+          </tr>
+        </table>
+      </div>
+      <label class="price__toggles slider__toggles" for="price-input-1">
+      </label>
+      <label class="price__toggles slider__toggles" for="price-input-2">
+      </label>
+      <label class="price__toggles slider__toggles" for="price-input-3">
+      </label>
+    </div>
+
+    <section class="contact-info">
+      <h2 class="contact-info__title">Остались вопросы?
+    Свяжитесь с нами!</h2>
+      <p class="contact-info__phone"><b>Звоните:</b>
+        <br>
+        <a href="+78125556666">
+          <span class="contact-info-phone__hidden">Tel.:
+      </span>+7 (812) 555-66-66
+        </a>
+      </p>
+      <p class="contact-info__email"><b>Пишите:</b>
+        <br>
+        <a href="mailto:mail@htmlacademy.ru">
+          <span class="contact-info__email-hidden">email:
+      </span>mail@htmlacademy.ru
+        </a>
+      </p>
+      <address class="contact-info__adress">
+      <p>
+      <b>Приезжайте в гости:</b>
+      <a href="#">ул. Большая
+      Конюшенная, 19/8</a>
+      </p>
+    </address>
+      <div class="map  contact-info__map" id="map-canvas">
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

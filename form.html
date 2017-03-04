@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        PINK
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="menu-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="page-main__header">
+      <h2 class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </h2>
+    </div>
+    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="form-name">
+        <legend class="form-name__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+        </legend>
+        <label class="form-name__label" for="field-surname">Фамилия:</label>
+        <input class="form-name__input" type="text" name="user-surname" id="field-surname" value="Укажите фамилию *" required>
+        <label class="form-name__label" for="field-name">Имя:</label>
+        <input class="form-name__input" type="text" name="user-name" id="field-name" value="Введите ваше имя *" required>
+        <label class="form-name__label" for="field-middle-name">Отчество:</label>
+        <input class="form-name__input" type="text" name="user-middle-name" id="field-middle-name" value="Ну и отчество тоже *"> </fieldset>
+      <fieldset class="form-achivments">
+        <legend class="form-achivments__title">Ваши безбашенные достижения в путешествии</legend>
+        <input class="form-achivments__input" type="checkbox" name="user-achivments" id="field-shark" checked>
+        <label class="form-achivments__label" for="field-shark">Сделал селфи с акулой</label>
+        <input class="form-achivments__input" type="checkbox" name="user-achivments" id="field-burned" checked>
+        <label class="form-achivments__label" for="field-burned">Обгорел на пляже</label>
+        <input class="form-achivments__input" type="checkbox" name="user-achivments" id="field-celebrity">
+        <label class="form-achivments__label" for="field-celebrity">Видел Чака Норриса</label>
+        <input class="form-achivments__input" type="checkbox" name="user-achivments" id="field-souvenirs">
+        <label class="form-achivments__label" for="field-souvenirs">Накупил сувениров</label>
+        <input class="form-achivments__input" type="checkbox" name="user-achivments" id="field-tower" checked>
+        <label class="form-achivments__label" for="field-tower">Удержал башню</label>
+        <input class="form-achivments__input" type="checkbox" name="user-achivments" id="field-hotel">
+        <label class="form-achivments__label" for="field-hotel">Разгромил отель</label>
+      </fieldset>
+      <fieldset class="form-contacts">
+        <label class="form-contacts__label" for="field-phone-number">Номер телефона</label>
+        <input class="form-contacts__input" type="tel" name="user-phone-number" id="field-phone-number" value="Номер, пожалуйста">
+        <label class="form-contacts__label" for="field-email">Адрес почты</label>
+        <input class="form-contacts__input" type="email" name="user-email" id="field-email" value="Введите почту *" required>
+      </fieldset>
+      <fieldset class="form-app-type">
+        <input class="form-app-type__input" type="radio" name="app-type" id="field-ios" checked>
+        <label class="form-app-type__label" for="field-ios">Pink для iOS</label>
+        <input class="form-app-type__input" type="radio" name="app-type" id="field-android">
+        <label class="form-app-type__label" for="field-android">Pink на Android</label>
+        <input class="form-app-type__input" type="radio" name="app-type" id="field-windows">
+        <label class="form-app-type__label" for="field-windows">Windows Phone</label>
+      </fieldset>
+      <fieldset class="form-feedback">
+        <p class="form-feedback__title">Опишите свои эмоции</p>
+        <textarea class="form-feedback__input">Можно прям в красках, не стесняясь в выражениях</textarea>
+      </fieldset>
+      <button class="btn form__btn" type="submit">Отправить форму</button>
+      <span class="form-requerement">* — обязательные поля</span>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="logo-bottom">
+      <img class="logo-bottom__img" src="#" alt="htmlacademy">
+    </div>
+    <ul class="form-footer-social  social-links">
+      <li class="form-footer-social__item">
+        <a class="social-link  form-footer-social__link--tw" href="#">В
+        </a>
+      </li>
+      <li class="form-footer-social__item">
+        <a class="social-link  form-footer-social__link--fb" href="#">
+        </a>
+      </li>
+      <li class="form-footer-social__item">
+        <a class="social-link  form-footer-social__link--yt" href="#">
+        </a>
+      </li>
+    </ul>
+    <p class="form-footer__copyright">Разработано
+      <img class="form-footer__logo" src="#" alt="Пинк"></p>
+  </footer>
+</body>
+
+</html>
