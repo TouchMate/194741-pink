@@ -8,50 +8,57 @@
 
 <body>
   <header class="page-header">
+    <div class="page-header__logo">
+      PINK
+    </div>
+    <span class="main-nav__toggle">
+    </span>
     <nav class="main-nav  main-nav--closed  main-nav--nojs">
-      <button class="main-nav__toggle" type="button">
-        PINK
-      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="menu-nav__link">Главная</a>
+            <a class="menu-nav__link" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">Фотографии</a>
+            <a class="main-nav__link" href="#">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">Конкурс</a>
+            <a class="main-nav__link" href="#">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">HTML Academy</a>
+            <a class="main-nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <main>
-    <article class="app-download">
+    <div class="app-download">
       <div class="app-download__header">
+        <img class="app__image" src="#" alt="Приложение Пинк">
       </div>
       <div class="app-download-type">
-        <a class="btn app-download-btn">Скачать приложение</a>
+        <a class="btn app-download-btn" href="#">Скачать приложение</a>
         <ul class="app-download-type__list">
           <li class="app-download-type__item">
-            <a class="app-download-type__link">
+            <a class="app-download-type__link" href="#">
               <span class="visually-hidden">Apple</span>
             </a>
-            <a class="app-download-type__link">
+          </li>
+          <li class="app-download-type__item">
+            <a class="app-download-type__link" href="#">
               <span class="visually-hidden">Android</span>
             </a>
-            <a class="app-download-type__link">
+          </li>
+          <li class="app-download-type__item">
+            <a class="app-download-type__link" href="#">
               <span class="visually-hidden">Windows Phone</span>
             </a>
           </li>
         </ul>
-        <h3 class="app-download-type__title">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</h3>
+        <p class="app-download-type__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
-    </article>
+    </div>
     <section class="advantages">
       <div class="advantages__header">
         <p class="advantages__slogan">Устали от серости мегаполиса?
@@ -151,7 +158,7 @@
       Конюшенная, 19/8</a>
       </p>
     </address>
-      <div class="map  contact-info__map" id="map-canvas">
+      <div class="map  contact-info__map">
       </div>
     </section>
   </main>
