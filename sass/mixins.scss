@@ -1,0 +1,26 @@
+//Font-mixin
+@mixin font-main-regular() {
+  font-family: "OpenSans";
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+}
+
+@mixin font-main-bold() {
+  font-family: "OpenSans";
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 800;
+  color: #000000;
+}
+
+@mixin font-menu-upcase() {
+  font-family: "OpenSans";
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+

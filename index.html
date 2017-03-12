@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="menu-nav__link" href="#">Главная</a>
+            <a class="main-nav__link" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Фотографии</a>
@@ -35,7 +36,7 @@
   <main>
     <div class="app-download">
       <div class="app-download__header">
-        <img class="app__image" src="#" alt="Приложение Пинк">
+        <img class="app__image" src="img/iphone-hand-mobile@1x.png" alt="Приложение Пинк">
       </div>
       <div class="app-download-type">
         <a class="btn app-download-btn" href="#">Скачать приложение</a>
@@ -84,6 +85,7 @@
         <p class="avantages__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
         </p>
       </div>
+      <div class="advantages__image"></div>
     </section>
     <div class="reviews">
       <div class="reviews__wrapper slider">
@@ -113,7 +115,7 @@
           <tr class="price__item-row">
             <th class="price__item-head">Стандарт
               <br>
-              <br><span>3,99 USD</span></th>
+              <br><span class="price__item-currency">3,99 USD</span></th>
           </tr>
           <tr class="price__item-row">
             <td class="price__item-futures">Розовый фильтр</td>
@@ -139,22 +141,22 @@
     Свяжитесь с нами!</h2>
       <p class="contact-info__phone"><b>Звоните:</b>
         <br>
-        <a href="+78125556666">
+        <a class="contact-info__phone-number" href="+78125556666">
           <span class="contact-info-phone__hidden">Tel.:
       </span>+7 (812) 555-66-66
         </a>
       </p>
       <p class="contact-info__email"><b>Пишите:</b>
         <br>
-        <a href="mailto:mail@htmlacademy.ru">
+        <a class="contact-info__email-address" href="mailto:mail@htmlacademy.ru">
           <span class="contact-info__email-hidden">email:
       </span>mail@htmlacademy.ru
         </a>
       </p>
-      <address class="contact-info__adress">
+      <address class="contact-info__address">
       <p>
       <b>Приезжайте в гости:</b>
-      <a href="#">ул. Большая
+      <a class="contact-info__address-full" href="#">ул. Большая
       Конюшенная, 19/8</a>
       </p>
     </address>

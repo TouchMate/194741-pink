@@ -1,0 +1,40 @@
+.advantages {
+  font-family: "OpenSans";
+  &__header {
+    background-color: $white;
+    color: #283645;
+  }
+  &__slogan {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 200;
+    color: #283645;
+  }
+  &__item {
+    background-color: $lightgrey;
+  }
+  &__title {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    color: #000000;
+  }
+  &__content {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
+  }
+  &__image {
+    min-height: 266px;
+    background-image: url(../../img/iphone-screen-mobile@1x.png);
+    background-color: $lightgrey;
+    background-repeat: no-repeat;
+    background-position: 50% 35%;
+  }
+}
