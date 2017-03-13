@@ -1,0 +1,22 @@
+.form-achivments {
+  @include reset;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $lightgrey;
+  &__title {
+    display: block;
+    padding-top: 68px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 18px;
+    color: $darkred;
+  }
+  &__input {
+    display: none;
+  }
+  &__label {
+    display: block;
+    padding-left: 70px;
+    font-size: 18px;
+  }
+}
