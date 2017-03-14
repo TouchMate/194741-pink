@@ -1,0 +1,27 @@
+.app-download-type {
+  background-color: #1d2631;
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__link {
+    text-decoration: none;
+  }
+  &__info {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 200;
+    color: #d3d4d5;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.app-download-btn {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 800px;
+  color: #ffffff;
+  text-decoration: none;
+}

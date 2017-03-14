@@ -1,0 +1,28 @@
+.form {
+  @include reset;
+  font-family: "OpenSans";
+  font-size: 14px;
+  line-height: 30px;
+  color: $deepblue;
+  background-color: $white;
+  &__btn {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 280px;
+    background-color: $green;
+    line-height: 30px;
+    font-weight: 800;
+    border: none;
+    color: red;
+  }
+  &__requerement {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 36px;
+    color: red;
+  }
+  &__requerement-star {
+    color: $darkred;
+  }
+}

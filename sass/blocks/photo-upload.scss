@@ -1,0 +1,16 @@
+.photo-upload {
+  padding-top: 47px;
+  font-family: "OpenSans";
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  &__title-container {
+    background-color: $white;
+  }
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,40 @@
+.photo-upload-app {
+  padding-top: 60px;
+  background-color: $lightgrey;
+  &__img {
+    display: block;
+  }
+  &__tools {
+    min-height: 162px;
+    border-bottom: 2px solid #dddfe0;
+  }
+  &__crop {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    display: inline-block;
+  }
+  &__color {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    display: inline-block;
+  }
+  &__brightness {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    display: inline-block;
+  }
+  &__scale {
+    width: 240px;
+    height: 2px;
+    background-color: #283645;
+  }
+  &__controls {
+    box-sizing: border-box;
+    min-height: 202px;
+    padding-top: 38px;
+    padding-bottom: 42px;
+  }
+}

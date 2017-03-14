@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,8 +34,8 @@
     </nav>
   </header>
   <main>
-    <div class="page-main__header">
-      <h2 class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </h2>
+    <div class="page-main-header">
+      <h2 class="page-main-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </div>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="form-name">
@@ -45,7 +46,7 @@
         <label class="form-name__label" for="field-name">Имя:</label>
         <input class="form-name__input" type="text" name="user-name" id="field-name" value="Введите ваше имя *" required>
         <label class="form-name__label" for="field-middle-name">Отчество:</label>
-        <input class="form-name__input" type="text" name="user-middle-name" id="field-middle-name" value="Ну и отчество тоже *"> </fieldset>
+        <input class="form-name__input" type="text" name="user-middle-name" id="field-middle-name" value="Ну и отчество тоже"> </fieldset>
       <fieldset class="form-achivments">
         <legend class="form-achivments__title">Ваши безбашенные достижения в путешествии</legend>
         <input class="form-achivments__input" type="checkbox" name="user-achivments" id="field-shark" checked>
@@ -80,26 +81,26 @@
         <textarea class="form-feedback__input">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
       <button class="btn form__btn" type="submit">Отправить форму</button>
-      <span class="form-requerement">* — обязательные поля</span>
+      <span class="form__requerement"><span class="form__requerement-star">*</span> — обязательные поля</span>
     </form>
   </main>
   <footer class="page-footer">
     <div class="logo-bottom">
-      <img class="logo-bottom__img" src="#" alt="htmlacademy">
+      <img class="logo-bottom__img" src="img/logo-pink-blue-mobile.svg" alt="htmlacademy">
     </div>
-    <ul class="form-footer-social  social-links">
-      <li class="form-footer-social__item">
-        <a class="social-link  form-footer-social__link--tw" href="#">VKontakte</a>
+    <ul class="page-footer-social  social-links">
+      <li class="page-footer-social__item">
+        <a class="social-link  page-footer-social__link--tw" href="#">Vkontakte</a>
       </li>
-      <li class="form-footer-social__item">
-        <a class="social-link  form-footer-social__link--fb" href="#">Facebook</a>
+      <li class="page-footer-social__item">
+        <a class="social-link  page-footer-social__link--fb" href="#">Facebook</a>
       </li>
-      <li class="form-footer-social__item">
-        <a class="social-link  form-footer-social__link--yt" href="#">YouTube</a>
+      <li class="page-footer-social__item">
+        <a class="social-link  page-footer-social__link--yt" href="#">Twitter</a>
       </li>
     </ul>
-    <p class="form-footer__copyright">Разработано
-      <img class="form-footer__logo" src="#" alt="Пинк"></p>
+    <p class="page-footer__copyright">Разработано
+      <img class="page-footer__logo" src="img/logo-htmlacademy.svg" alt="Пинк"></p>
   </footer>
 </body>
 

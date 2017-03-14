@@ -1,0 +1,12 @@
+.page-header {
+  background-color: $deepblue;
+  font-family: "OpenSans";
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  &__logo {
+    text-transform: uppercase;
+    font-weight: 200;
+  }
+}

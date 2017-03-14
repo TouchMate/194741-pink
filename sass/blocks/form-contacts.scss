@@ -1,0 +1,16 @@
+.form-contacts {
+  @include reset;
+  padding-top: 38px;
+  padding-bottom: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  &__label {
+    display: block;
+    color: $darkred;
+    text-transform: uppercase;
+  }
+  &__input {
+    font-size: 18px;
+    color: $deepblue;
+  }
+}

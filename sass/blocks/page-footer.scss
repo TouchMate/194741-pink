@@ -1,0 +1,15 @@
+.page-footer {
+  font-family: "OpenSans";
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+  padding-top: 38px;
+  padding-bottom: 40px;
+  background-color: $white;
+  &__copyright {
+    vertical-align: top;
+  }
+  &__logo {
+    vertical-align: middle;
+  }
+}
