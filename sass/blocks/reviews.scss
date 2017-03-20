@@ -1,15 +1,66 @@
 .reviews {
+  padding-top: 50px;
+  padding-bottom: 94px;
+  @include container();
   background-color: $white;
-  font-family: "OpenSans";
-  line-height: 30px;
+  text-align: center;
+  &__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &__item {
+    margin: 0;
+    padding: 0;
+  }
   &__author-name {
+    padding: 0;
+    margin: 0;
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
   }
+  &__author-info {
+    display: none;
+  }
   &__author-content {
+    padding: 0;
+    margin: 0;
     font-size: 14px;
     font-weight: 400;
     color: #283645;
+    text-align: center;
+  }
+}
+
+.slider__input {
+  display: none;
+}
+
+@media ("$bp-tablet") {
+  .reviews {
+    padding-top: 10px;
+    padding-bottom: 94px;
+    padding-bottom: 70px;
+    &__item {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    &__author-info {
+      display: inherit;
+    }
+    &__author-content {
+      margin-bottom: 41px;
+    }
+  }
+}
+
+@media ("$bp-desktop") {
+  .reviews {
+    padding-top: 187px;
+    padding-bottom: 43px;
+    &__wrapper {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 }

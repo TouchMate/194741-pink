@@ -1,9 +1,13 @@
 .app-download-type {
+  padding: 28px 20px 33px 20px;
   background-color: #1d2631;
   &__list {
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+  &__item {
+    display: inline-block;
   }
   &__link {
     text-decoration: none;
@@ -24,4 +28,22 @@
   font-weight: 800px;
   color: #ffffff;
   text-decoration: none;
+}
+
+@media("$bp-tablet") {
+  .app-download-type {
+    position: absolute;
+    height: 100%;
+    width: 300px;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background: none;
+  }
+}
+
+@media("$bp-desktop") {
+  .app-download-type {
+    background: none;
+  }
 }

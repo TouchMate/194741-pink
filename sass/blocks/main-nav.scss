@@ -1,4 +1,5 @@
 .main-nav {
+  @include container();
   background-color: $deepblue;
   font-family: "OpenSans";
   font-size: 18px;
@@ -11,8 +12,24 @@
     padding: 0;
     margin: 0;
   }
+  &__item {
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #000001;
+  }
   &__link {
+    display: block;
+    text-align: center;
     text-decoration: none;
     color: #ffffff;
+  }
+}
+
+@media ("$bp-desktop") {
+  .main-nav {
+    float: right;
+    width: 620px;
+    &__item {
+      display: inline-block;
+    }
   }
 }

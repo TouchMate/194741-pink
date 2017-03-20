@@ -1,8 +1,38 @@
 .app-download {
+  @include container();
   background-color: $deepblue;
   &__header {
+    min-height: 396px;
     background-image: url("../../img/bg-back-mobile@1x.jpg");
-    background-position: center;
+    background-position: center bottom;
+    background-clip: padding-box;
+    background-origin: border-box;
     background-repeat: no-repeat;
+  }
+  &__image {
+    min-height: 396px;
+    background-image: url("../../img/iphone-hand-mobile@1x.png");
+    background-position: center bottom;
+    background-clip: padding-box;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+  }
+}
+
+@media("$bp-tablet") {
+  .app-download {
+    position: relative;
+    &__header {
+      background-size: cover;
+    }
+    &__image {
+      background-size: contain;
+    }
+  }
+}
+
+@media("$bp-desktop") {
+  .app-download__header {
+    background-size: cover;
   }
 }

@@ -1,14 +1,23 @@
 .contact-info {
-  font-family: "OpenSans";
-  line-height: 30px;
+  padding-top: 48px;
+  padding-bottom: 38px;
+  @include container();
+  text-align: center;
+  &__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   &__title {
     margin: 0;
+    margin-bottom: 36px;
     padding: 0;
     font-size: 24px;
     color: #283645;
     font-weight: 100;
   }
   &__phone {
+    padding: 0;
+    margin: 0;
     font-size: 18px;
     font-weight: 800;
     color: #283645;
@@ -20,6 +29,8 @@
     color: #d22856;
   }
   &__email {
+    padding: 0;
+    margin: 0;
     font-size: 18px;
     font-weight: bolder;
     color: #283645;
@@ -31,10 +42,16 @@
     color: #d22856;
   }
   &__address {
+    padding: 0;
+    margin: 0;
     font-size: 18px;
-    font-weight: bolder;
+    font-weight: 800;
     color: #283645;
     font-style: normal;
+  }
+  &__address-content {
+    padding: 0;
+    margin: 0;
   }
   &__address-full {
     text-decoration: none;
@@ -50,4 +67,88 @@
 
 .contact-info__email-hidden {
   display: none;
+}
+
+@media ("$bp-tablet") {
+  .contact-info {
+    padding-top: 51px;
+    padding-bottom: 21px;
+    &__wrapper {
+      padding-left: 0px;
+      padding-right: 0px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__title {
+      flex-basis: 620px;
+      padding: 0;
+      padding-left: 120px;
+      padding-right: 120px;
+      margin: 0;
+      margin-bottom: 45px;
+      font-size: 40px;
+      line-height: 40px;
+      flex-shrink: 1;
+    }
+    &__phone {
+      padding: 0;
+      margin: 0;
+      margin-right: 20px;
+      flex-basis: 300px;
+    }
+    &__email {
+      padding: 0;
+      margin: 0;
+      flex-basis: 300px;
+    }
+    &__address {
+      padding: 0;
+      padding-left: 205px;
+      padding-right: 205px;
+      margin: 0;
+      margin-top: 27px;
+      flex-basis: 620px;
+    }
+  }
+}
+
+@media("$bp-desktop") {
+  .contact-info {
+    padding-top: 73px;
+    padding-bottom: 18px;
+    &__wrapper {
+      display: flex;
+      padding-left: 10px;
+      padding-right: 10px;
+      justify-content: center;
+    }
+    &__title {
+      margin-bottom: 55px;
+      flex-basis: 940px;
+      padding-left: 200px;
+      padding-right: 200px;
+      font-size: 50px;
+    }
+    &__phone {
+      margin: 0;
+      flex-basis: 200px;
+      flex-grow: 1;
+    }
+    &__email {
+      flex-basis: 200px;
+      flex-grow: 1;
+      order: 1;
+    }
+    &__address {
+      padding: 0;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin: 0;
+      flex-basis: 200px;
+      flex-grow: 1;
+      box-sizing: border-box;
+    }
+  }
 }
