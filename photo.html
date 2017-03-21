@@ -9,27 +9,31 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__logo">PINK</div>
-    <span class="main-nav__toggle">
-    </span>
-    <nav class="main-nav  main-nav--closed  main-nav--nojs">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="menu-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
+    <div class="page-header__wrapper">
+      <div class="page-header__logo">
+        PINK
       </div>
-    </nav>
+      <span class="main-nav__toggle">
+    </span>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
     <div class="page-main-header">
@@ -121,17 +125,19 @@
       </div>
       <div class="photo-upload-app">
         <img class="photo-upload-app__img" src="img/photo-7-mobile@1x.jpg" alt="фото">
-        <div class="photo-upload-app__tools">
-          <div class="photo-upload-app__crop"></div>
-          <div class="photo-upload-app__color"></div>
-          <div class="photo-upload-app__brightness"></div>
-          <div class="scale photo-upload-app__scale">
-            <div class="bar photo-upload__bar"></div>
+        <div class="photo-upload-app__control">
+          <div class="photo-upload-app__tools">
+            <div class="photo-upload-app__crop"></div>
+            <div class="photo-upload-app__color"></div>
+            <div class="photo-upload-app__brightness"></div>
+            <div class="scale photo-upload-app__scale">
+              <div class="bar photo-upload__bar"></div>
+            </div>
           </div>
-        </div>
-        <div class="photo-upload-app__controls">
-          <button class="btn photo-upload-app__btn-publish" type="submit">Запостить</button>
-          <button class="btn phto-upload-app__btn-cancel" type="reset">Отмена</button>
+          <div class="photo-upload-app__btns">
+            <button class="btn photo-upload-app__btn-publish" type="submit">Запостить</button>
+            <button class="btn phto-upload-app__btn-cancel" type="reset">Отмена</button>
+          </div>
         </div>
       </div>
     </article>

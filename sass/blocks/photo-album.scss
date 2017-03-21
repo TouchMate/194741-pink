@@ -1,11 +1,14 @@
 .photo-album {
   margin: 0;
-  padding-top: 53px;
-  font-family: "OpenSans";
+  @include container();
   font-size: 14px;
   line-height: 24px;
   color: #283645;
-  &__header {}
+  &__header {
+    padding-top: 53px;
+    padding-bottom: 56px;
+    text-align: center;
+  }
   &__title {
     padding: 0;
     margin: 0;
@@ -35,5 +38,26 @@
     font-size: 12px;
     text-transform: uppercase;
     color: #d22856;
+  }
+}
+
+@media("$bp-tablet") {
+  .photo-album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__header {
+      flex-basis: 100%;
+      padding-top: 95px;
+      padding-bottom: 78px;
+    }
+    &__item {
+      flex-basis: 300px;
+      margin-bottom: 20px;
+    }
+    &__item:nth-child(2) {
+      margin-bottom: 51px;
+      flex-basis: 100%;
+    }
   }
 }

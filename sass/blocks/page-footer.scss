@@ -1,15 +1,56 @@
 .page-footer {
-  font-family: "OpenSans";
-  font-size: 14px;
+  padding-top: 40px;
+  padding-bottom: 41px;
+  @include container();
   line-height: 18px;
   color: #283645;
   padding-top: 38px;
   padding-bottom: 40px;
   background-color: $white;
+  text-align: center;
   &__copyright {
     vertical-align: top;
   }
   &__logo {
     vertical-align: middle;
+  }
+}
+
+.page-footer--hidden {
+  display: none;
+}
+
+@media("$bp-tablet") {
+  .page-footer {
+    padding-top: 36px;
+    padding-bottom: 37px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo-bottom {
+    flex-basis: 150px;
+  }
+  .page-footer-social {
+    flex-basis: 320px;
+  }
+  .page-footer__copyright {
+    flex-basis: 150px;
+  }
+}
+
+@media("$bp-desktop") {
+  .page-footer {
+    padding-top: 98px;
+    padding-bottom: 72px;
+    align-items: flex-start;
+  }
+  .logo-bottom {
+    flex-basis: 300px;
+  }
+  .page-footer-social {
+    flex-basis: 300px;
+  }
+  .page-footer__copyright {
+    flex-basis: 300px;
   }
 }

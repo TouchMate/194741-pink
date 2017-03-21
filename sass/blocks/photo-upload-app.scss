@@ -1,12 +1,14 @@
 .photo-upload-app {
-  padding-top: 60px;
+  padding-top: 20px;
   background-color: $lightgrey;
   &__img {
     display: block;
   }
   &__tools {
-    min-height: 162px;
+    padding-top: 42px;
+    padding-bottom: 34px;
     border-bottom: 2px solid #dddfe0;
+    text-align: center;
   }
   &__crop {
     width: 20px;
@@ -36,5 +38,43 @@
     min-height: 202px;
     padding-top: 38px;
     padding-bottom: 42px;
+  }
+}
+
+@media("$bp-tablet") {
+  .photo-upload-app {
+    width: 620px;
+    padding-top: 57px;
+    padding-bottom: 57px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img {
+    flex-basis: 300px;
+  }
+  &__control {
+    flex-basis: 300px;
+  }
+}
+
+@media("$bp-desktop") {
+  .photo-upload-app {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    &__img {
+      flex-basis: 470px;
+      padding-left: 80px;
+      padding-right: 90px;
+      box-sizing: border-box;
+    }
+    &__control {
+      flex-basis: 470px;
+      padding-right: 60px;
+      box-sizing: border-box;
+    }
+  }
+  .photo-upload-app__btns {
+    display: flex;
   }
 }

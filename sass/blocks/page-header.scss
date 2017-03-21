@@ -1,15 +1,13 @@
 .page-header {
   @include container();
   background-color: $deepblue;
-  font-family: "OpenSans";
   font-size: 18px;
   line-height: 32px;
   font-weight: 800;
   color: #ffffff;
-  &__wrapper {
-    @include clearfix();
-  }
   &__logo {
+    padding-top: 21px;
+    padding-bottom: 21px;
     text-transform: uppercase;
     font-weight: 200;
     padding-left: 20px;
@@ -17,10 +15,17 @@
   }
 }
 
-@media ("$bp-desktop") {
+@media("$bp-tablet") {
   .page-header__logo {
-    width: 940px;
-    float: left;
-    width: 150px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
+@media("$bp-desktop") {
+  .page-header__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 }

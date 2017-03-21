@@ -21,18 +21,25 @@
 
 @media("$bp-tablet") {
   .app-download {
-    position: relative;
+    display: flex;
+    justify-content: center;
     &__header {
-      background-size: cover;
-    }
-    &__image {
-      background-size: contain;
+      padding-right: 20px;
+      width: 310px;
+      min-height: 618px;
+      order: 1;
     }
   }
 }
 
 @media("$bp-desktop") {
-  .app-download__header {
-    background-size: cover;
+  .app-download {
+    display: flex;
+    &__header {
+      padding-right: 10px;
+      width: 470px;
+      min-height: 618px;
+      order: 1;
+    }
   }
 }
