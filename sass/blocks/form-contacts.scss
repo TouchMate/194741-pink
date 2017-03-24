@@ -4,6 +4,9 @@
   padding-bottom: 42px;
   padding-left: 20px;
   padding-right: 20px;
+  &__title {
+    display: none;
+  }
   &__label {
     display: block;
     color: $darkred;
@@ -14,3 +17,39 @@
     color: $deepblue;
   }
 }
+
+@media("$bp-tablet") {
+  .form-contacts {
+    order: 3;
+    border: 2px solid #e5e5e5;
+    background-color: $white;
+    padding-left: 59px;
+    padding-right: 59px;
+    &__title {
+      padding-left: 33px;
+      padding-right: 33px;
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      color: $darkred;
+    }
+    &__container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column-reverse;
+    }
+    &__label:nth-child(1) {
+      order: 1;
+    }
+    &__input:nth-child(2) {
+      order: 2;
+    }
+  }
+}
+
+@media ("$bp-desktop") {
+  .form-contacts {
+    width: 100%;
+  }
+}
+

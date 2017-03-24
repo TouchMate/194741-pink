@@ -5,6 +5,13 @@
   padding-bottom: 42px;
   border: none;
   background-color: $lightgrey;
+  &__title {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: $darkred;
+  }
   &__input {
     display: none;
   }
@@ -13,5 +20,28 @@
     padding-left: 70px;
     font-size: 18px;
     color: $deepblue;
+  }
+}
+
+@media("$bp-tablet") {
+  .form-app-type {
+    order: 2;
+    border: 2px solid #e5e5e5;
+    background-color: $white;
+    &__title {
+      width: 320px;
+      float: none;
+      padding-left: 2px;
+      padding-right: 2px;
+      border: none;
+      text-align: center;
+    }
+  }
+}
+
+@media("$bp-desktop") {
+  .form-app-type {
+    width: 436px;
+    box-sizing: border-box;
   }
 }
