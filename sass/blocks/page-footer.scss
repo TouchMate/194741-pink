@@ -1,4 +1,6 @@
 .page-footer {
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 40px;
   padding-bottom: 41px;
   @include container();
@@ -40,6 +42,8 @@
 
 @media("$bp-desktop") {
   .page-footer {
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 98px;
     padding-bottom: 72px;
     align-items: flex-start;

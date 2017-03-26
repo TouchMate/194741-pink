@@ -6,6 +6,8 @@
   line-height: 30px;
   color: #283645;
   &__title-container {
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: $white;
   }
   &__title {
@@ -37,6 +39,8 @@
 @media("$bp-desktop") {
   .photo-upload {
     &__title-container {
+      padding-left: 10px;
+      padding-right: 10px;
       padding-top: 62px;
       padding-bottom: 66px;
     }

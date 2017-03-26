@@ -32,14 +32,13 @@
 
 @media("$bp-tablet") {
   .app-download-type {
-    padding-left: 20px;
+    padding: 0;
     width: 310px;
   }
 }
 
 @media("$bp-desktop") {
   .app-download-type {
-    padding-left: 10px;
     width: 470px;
   }
 }

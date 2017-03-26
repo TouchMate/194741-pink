@@ -7,6 +7,8 @@
         color: $deepblue;
         background-color: $white;
         &__title {
+          padding-left: 20px;
+          padding-right: 20px;
           font-size: 14px;
           font-weight: 200;
           text-align: center;
@@ -15,10 +17,10 @@
         }
         &__control {
           order: 6;
+          padding-left: 20px;
+          padding-right: 20px;
         }
         &__btn {
-          margin-left: 20px;
-          margin-right: 20px;
           width: 280px;
           background-color: $green;
           line-height: 30px;
@@ -43,7 +45,10 @@
         .form {
           display: flex;
           flex-direction: column;
+          padding-left: 20px;
+          padding-right: 20px;
           &__control {
+            padding: 0;
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
@@ -61,6 +66,8 @@
 
       @media("$bp-desktop") {
         .form {
+          padding-left: 10px;
+          padding-right: 10px;
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: space-between;

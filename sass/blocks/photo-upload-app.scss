@@ -1,5 +1,7 @@
 .photo-upload-app {
   padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: $lightgrey;
   &__img {
     display: block;
@@ -43,7 +45,6 @@
 
 @media("$bp-tablet") {
   .photo-upload-app {
-    width: 620px;
     padding-top: 57px;
     padding-bottom: 57px;
     display: flex;
@@ -59,7 +60,8 @@
 
 @media("$bp-desktop") {
   .photo-upload-app {
-    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     justify-content: space-between;
     &__img {

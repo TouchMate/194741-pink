@@ -1,5 +1,7 @@
 .form-achivments {
   @include reset();
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: $lightgrey;
   padding-top: 40px;
   padding-bottom: 52px;
@@ -17,6 +19,7 @@
 
 @media("$bp-tablet") {
   .form-achivments {
+    padding: 0;
     order: 4;
     border: 2px solid #e5e5e5;
     background-color: $white;

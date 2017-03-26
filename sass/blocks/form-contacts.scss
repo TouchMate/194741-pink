@@ -13,6 +13,7 @@
     text-transform: uppercase;
   }
   &__input {
+    width: 100%;
     font-size: 18px;
     color: $deepblue;
   }
@@ -20,6 +21,7 @@
 
 @media("$bp-tablet") {
   .form-contacts {
+    padding: 0;
     order: 3;
     border: 2px solid #e5e5e5;
     background-color: $white;
@@ -52,4 +54,3 @@
     width: 100%;
   }
 }
-

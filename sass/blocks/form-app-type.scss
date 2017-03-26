@@ -25,6 +25,7 @@
 
 @media("$bp-tablet") {
   .form-app-type {
+    padding: 0;
     order: 2;
     border: 2px solid #e5e5e5;
     background-color: $white;
