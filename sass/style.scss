@@ -2,6 +2,7 @@
 @import "mixins.scss";
 @import "variables.scss";
 @import "global/fonts.scss";
+@import "global/scaffolding.scss";
 @import "blocks/btns.scss";
 @import "blocks/page-header";
 @import "blocks/main-nav.scss";
@@ -23,6 +24,8 @@
 @import "blocks/logo-bottom.scss";
 @import "blocks/page-footer-social.scss";
 @import "blocks/social-links.scss";
+@import "blocks/photo-header.scss";
+@import "blocks/photo-popular.scss";
 @import "blocks/photo-album.scss";
 @import "blocks/photo-upload.scss";
 @import "blocks/photo-upload-app.scss";

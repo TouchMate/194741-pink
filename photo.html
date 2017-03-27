@@ -3,115 +3,138 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy:Пинк-Фото</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="page-header__logo">PINK</div>
-    <span class="main-nav__toggle">
-    </span>
-    <nav class="main-nav  main-nav--closed  main-nav--nojs">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="menu-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
+    <div class="page-header__wrapper">
+      <div class="page-header__logo">
+        PINK
       </div>
-    </nav>
+      <span class="main-nav__toggle">
+    </span>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
     <div class="page-main-header">
       <h2 class="page-main-header__title">Фотографии
 пользователей</h2>
     </div>
-    <section class="photo-album">
-      <div class="photo-album__header">
-        <h2 class="photo-album__title">Взгляните на фотографии, которые выкладывают пользователи!
+    <div class="photo-header">
+      <h2 class="photo-header__title">Взгляните на фотографии, которые выкладывают пользователи!
 Видите, как не хватает ваших?</h2>
-      </div>
-      <figure class="photo-album__item">
-        <div class="photo-album__item-new">Понорама дня
+    </div>
+    <section class="photo-popular">
+      <figure class="photo-popular__container">
+        <div class="photo-popular__trend-tag">Понорама дня
         </div>
-        <a class="phto-album__img-link" href="#"><img src="img/panorama-mobile@1x.jpg" alt="Фото пользователя"></a>
-        <cite class="photo-album__user-name">Анна
-        <span class="photo-album__user-time">(5 минут назад)
+        <a class="photo-popular__img-link" href="#"><img class="photo-popular__img" src="img/panorama-mobile@1x.jpg" alt="Фото пользователя"></a>
+        <div class="photo-popular__content">
+          <cite class="photo-popular__user-name">Анна
+        <span class="photo-popular__user-time">(5 минут назад)
         </span>
        </cite>
-        <figcaption class="photo-album__user-comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-          <span class="photo-album__item-likes">Нравится: 215</span>
-        </figcaption>
+          <figcaption class="photo-popular__user-comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+            <span class="photo-popular__likes">Нравится: 215</span>
+          </figcaption>
+        </div>
       </figure>
+    </section>
+
+
+    <section class="photo-album">
       <figure class="photo-album__item">
-        <a class="phto-album__img-link" href="#"><img src="img/photo-1-mobile@1x.jpg" alt="Фото пользователя"></a>
-        <cite class="photo-album__user-name">Левон
+        <a class="photo-album__img-link" href="#"><img class="photo-album__img" src="img/photo-1-mobile@1x.jpg" alt="Фото пользователя"></a>
+        <div class="photo-album__content">
+          <cite class="photo-album__user-name">Левон
         <span class="photo-album__user-time">(5 часов назад)
         </span>
         </cite>
-        <figcaption class="photo-album__user-comment">Вчера он на луну летал, сегодня в руки к нам попал.
-          <span class="photo-album__item-likes">Нравится: 356</span>
-        </figcaption>
+          <figcaption class="photo-album__user-comment">Вчера он на луну летал, сегодня в руки к нам попал.
+            <span class="photo-album__item-likes">Нравится: 356</span>
+          </figcaption>
+        </div>
       </figure>
       <figure class="photo-album__item">
-        <a class="phto-album__img-link" href="#"><img src="img/photo-2-mobile@1x.jpg" alt="Фото пользователя"></a>
-        <cite class="photo-album__user-name">Антон
+        <a class="photo-album__img-link" href="#"><img class="photo-album__img" src="img/photo-2-mobile@1x.jpg" alt="Фото пользователя"></a>
+        <div class="photo-album__content">
+          <cite class="photo-album__user-name">Антон
           <span class="photo-album__user-time">(12 часов назад)
           </span>
         </cite>
-        <figcaption class="photo-album__user-comment">Соседи будут рады!
-          <span class="photo-album__item-likes">Нравится: 666</span>
-        </figcaption>
+          <figcaption class="photo-album__user-comment">Соседи будут рады!
+            <span class="photo-album__item-likes">Нравится: 666</span>
+          </figcaption>
+        </div>
       </figure>
       <figure class="photo-album__item">
-        <a class="phto-album__img-link" href="#"><img src="img/photo-3-mobile@1x.jpg" alt="Фото пользователя"></a>
-        <cite class="photo-album__user-name">Борис
+        <a class="photo-album__img-link" href="#"><img class="photo-album__img" src="img/photo-3-mobile@1x.jpg" alt="Фото пользователя"></a>
+        <div class="photo-album__content">
+          <cite class="photo-album__user-name">Борис
           <span class="photo-album__user-time">(20 часов назад)
           </span>
         </cite>
-        <figcaption class="photo-album__user-comment">Здесь могла быть ваша цитата о высоком и вечном.
-          <span class="photo-album__item-likes">Нравится: 215</span>
-        </figcaption>
+          <figcaption class="photo-album__user-comment">Здесь могла быть ваша цитата о высоком и вечном.
+            <span class="photo-album__item-likes">Нравится: 215</span>
+          </figcaption>
+        </div>
       </figure>
       <figure class="photo-album__item">
-        <a class="phto-album__img-link" href="#"><img src="img/photo-4-mobile@1x.jpg" alt="Фото пользователя"></a>
-        <cite class="photo-album__user-name">Борис
+        <a class="photo-album__img-link" href="#"><img class="photo-album__img" src="img/photo-4-mobile@1x.jpg" alt="Фото пользователя"></a>
+        <div class="photo-album__content">
+          <cite class="photo-album__user-name">Борис
           <span class="photo-album__user-time">(25 часов назад)
           </span>
         </cite>
-        <figcaption class="photo-album__user-comment">Самая кубанская в мире!
-          <span class="photo-album__item-likes">Нравится: 4</span>
-        </figcaption>
+          <figcaption class="photo-album__user-comment">Самая кубанская в мире!
+            <span class="photo-album__item-likes">Нравится: 4</span>
+          </figcaption>
+        </div>
       </figure>
       <figure class="photo-album__item">
-        <a class="phto-album__img-link" href="#"><img src="img/photo-5-mobile@1x.jpg" alt="Фото пользователя"></a>
-        <cite class="photo-album__user-name">Максим
+        <a class="photo-album__img-link" href="#"><img class="photo-album__img" src="img/photo-5-mobile@1x.jpg" alt="Фото пользователя"></a>
+        <div class="photo-album__content">
+          <cite class="photo-album__user-name">Максим
           <span class="photo-album__user-time">(40 часов назад)
           </span>
         </cite>
-        <figcaption class="photo-album__user-comment">Где снег-то?
-          <span class="photo-album__item-likes">Нравится: 150</span>
-        </figcaption>
+          <figcaption class="photo-album__user-comment">Где снег-то?
+            <span class="photo-album__item-likes">Нравится: 150</span>
+          </figcaption>
+        </div>
       </figure>
       <figure class="photo-album__item">
-        <a class="phto-album__img-link" href="#"><img src="img/photo-6-mobile@1x.jpg" alt="Фото пользователя"></a>
-        <cite class="photo-album__user-name">Надежда
+        <a class="photo-album__img-link" href="#"><img class="photo-album__img" src="img/photo-6-mobile@1x.jpg" alt="Фото пользователя"></a>
+        <div class="photo-album__content">
+          <cite class="photo-album__user-name">Надежда
           <span class="photo-album__user-time">(45 часов назад)
           </span>
         </cite>
-        <figcaption class="photo-album__user-comment">Всем GM и взаимные лайки!
-          <span class="photo-album__item-likes">Нравится: 2560</span>
-        </figcaption>
+          <figcaption class="photo-album__user-comment">Всем GM и взаимные лайки!
+            <span class="photo-album__item-likes">Нравится: 2560</span>
+          </figcaption>
+        </div>
       </figure>
     </section>
     <article class="photo-upload">
@@ -121,17 +144,19 @@
       </div>
       <div class="photo-upload-app">
         <img class="photo-upload-app__img" src="img/photo-7-mobile@1x.jpg" alt="фото">
-        <div class="photo-upload-app__tools">
-          <div class="photo-upload-app__crop"></div>
-          <div class="photo-upload-app__color"></div>
-          <div class="photo-upload-app__brightness"></div>
-          <div class="scale photo-upload-app__scale">
-            <div class="bar photo-upload__bar"></div>
+        <div class="photo-upload-app__control">
+          <div class="photo-upload-app__tools">
+            <div class="photo-upload-app__crop"></div>
+            <div class="photo-upload-app__color"></div>
+            <div class="photo-upload-app__brightness"></div>
+            <div class="scale photo-upload-app__scale">
+              <div class="bar photo-upload__bar"></div>
+            </div>
           </div>
-        </div>
-        <div class="photo-upload-app__controls">
-          <button class="btn photo-upload-app__btn-publish" type="submit">Запостить</button>
-          <button class="btn phto-upload-app__btn-cancel" type="reset">Отмена</button>
+          <div class="photo-upload-app__btns">
+            <button class="btn photo-upload-app__btn-publish" type="submit">Запостить</button>
+            <button class="btn photo-upload-app__btn-cancel" type="reset">Отмена</button>
+          </div>
         </div>
       </div>
     </article>

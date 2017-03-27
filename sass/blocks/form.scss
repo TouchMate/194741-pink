@@ -1,28 +1,78 @@
-.form {
-  @include reset;
-  font-family: "OpenSans";
-  font-size: 14px;
-  line-height: 30px;
-  color: $deepblue;
-  background-color: $white;
-  &__btn {
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 280px;
-    background-color: $green;
-    line-height: 30px;
-    font-weight: 800;
-    border: none;
-    color: red;
-  }
-  &__requerement {
-    display: block;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 36px;
-    color: red;
-  }
-  &__requerement-star {
-    color: $darkred;
-  }
-}
+      .form {
+        @include reset;
+        @include container();
+        font-family: "OpenSans";
+        font-size: 14px;
+        line-height: 30px;
+        color: $deepblue;
+        background-color: $white;
+        &__title {
+          padding-left: 20px;
+          padding-right: 20px;
+          font-size: 14px;
+          font-weight: 200;
+          text-align: center;
+          padding-top: 47px;
+          padding-bottom: 43px;
+        }
+        &__control {
+          order: 6;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        &__btn {
+          width: 280px;
+          background-color: $green;
+          line-height: 30px;
+          font-weight: 800;
+          border: none;
+          color: red;
+        }
+        &__requirement {
+          display: block;
+          margin-left: 20px;
+          margin-right: 20px;
+          margin-top: 36px;
+          color: red;
+          order: 7;
+        }
+        &__requirement-star {
+          color: $darkred;
+        }
+      }
+
+      @media("$bp-tablet") {
+        .form {
+          display: flex;
+          flex-direction: column;
+          padding-left: 20px;
+          padding-right: 20px;
+          &__control {
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          &__btn {
+            width: 300px;
+            margin: 0;
+          }
+          &__requirement {
+            display: inherit;
+          }
+        }
+      }
+
+      @media("$bp-desktop") {
+        .form {
+          padding-left: 10px;
+          padding-right: 10px;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          &__control {
+            width: 100%;
+          }
+        }
+      }

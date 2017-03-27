@@ -1,13 +1,36 @@
 .price {
-  font-family: "OpenSans";
+  padding-top: 93px;
+  @include container();
   background-color: #f2f2f2;
+  &__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &__item {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  &__item-row {
+    padding: 0;
+    margin: 0;
+    width: 280px;
+  }
   &__item-head {
+    padding: 0;
+    margin: 0;
     background-color: #283645;
     font-size: 18px;
     line-height: 30px;
     font-weight: 800;
     color: #ffffff;
     text-transform: uppercase;
+    &--empty {
+      background: none;
+    }
+  }
+  &__item-head:not(:nth-child(3)) {
+    display: none;
   }
   &__item-currency {
     font-size: 24px;
@@ -20,5 +43,28 @@
     color: #283645;
     text-transform: uppercase;
     background-color: $white;
+  }
+}
+
+@media ("$bp-tablet") {
+  .price {
+    padding-bottom: 68px;
+    &__item-head {
+      display: table-cell;
+    }
+    &__item-head:not(:nth-child(5)) {
+      display: table-cell;
+    }
+  }
+}
+
+@media("$bp-desktop") {
+  .price {
+    padding-top: 147px;
+    padding-bottom: 95px;
+  }
+  &__wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

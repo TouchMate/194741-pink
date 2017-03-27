@@ -1,11 +1,15 @@
 .form-feedback {
   border: none;
   margin: 0;
-  paddin-top: 40px;
+  padding: 0;
+  padding-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 48px;
   &__title {
+    border: none;
+    float: left;
+    width: 100%;
     color: $darkred;
     text-align: center;
     text-transform: lowercase;
@@ -19,6 +23,30 @@
     padding-left: 20px;
     padding-right: 20px;
     line-height: 30px;
-    box-sizing: border-box;
+    resize: none;
+  }
+}
+
+@media("$bp-tablet") {
+  .form-feedback {
+    order: 5;
+    padding-left: 59px;
+    padding-right: 59px;
+    border: 2px solid #e5e5e5;
+    background-color: $white;
+    &__title {
+      float: none;
+      width: auto;
+      text-align: center;
+    }
+    &__input {
+      width: 100%;
+    }
+  }
+}
+
+@media("$bp-desktop") {
+  .form-feedback {
+    width: 100%;
   }
 }

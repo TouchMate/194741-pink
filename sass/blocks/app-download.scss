@@ -1,8 +1,49 @@
 .app-download {
+  @include container();
   background-color: $deepblue;
   &__header {
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 396px;
     background-image: url("../../img/bg-back-mobile@1x.jpg");
-    background-position: center;
+    background-position: center bottom;
+    background-clip: padding-box;
+    background-origin: border-box;
     background-repeat: no-repeat;
+  }
+  &__image {
+    min-height: 396px;
+    background-image: url("../../img/iphone-hand-mobile@1x.png");
+    background-position: center bottom;
+    background-clip: padding-box;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+  }
+}
+
+@media("$bp-tablet") {
+  .app-download {
+    display: flex;
+    justify-content: center;
+    &__header {
+      padding: 0;
+      width: 310px;
+      min-height: 618px;
+      order: 1;
+    }
+  }
+}
+
+@media("$bp-desktop") {
+  .app-download {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    &__header {
+      padding: 0;
+      width: 470px;
+      min-height: 618px;
+      order: 1;
+    }
   }
 }

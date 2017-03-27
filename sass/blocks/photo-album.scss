@@ -1,22 +1,22 @@
 .photo-album {
   margin: 0;
-  padding-top: 53px;
-  font-family: "OpenSans";
+  padding-left: 20px;
+  padding-right: 20px;
+  @include container();
   font-size: 14px;
   line-height: 24px;
   color: #283645;
-  &__header {}
-  &__title {
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
-    color: #283645;
-  }
   &__item {
+    width: 280px;
     padding: 0;
     margin: 0;
+    background-color: #f2f2f2;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__content {
+    background-color: #f2f2f2;
   }
   &__user-name {
     font-weight: 800;
@@ -35,5 +35,28 @@
     font-size: 12px;
     text-transform: uppercase;
     color: #d22856;
+  }
+}
+
+@media("$bp-tablet") {
+  .photo-album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__item {
+      flex-basis: 300px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media("$bp-desktop") {
+  .photo-album {
+    padding-left: 10px;
+    padding-right: 10px;
+    &__item {
+      flex-basis: 300px;
+      margin-bottom: 20px;
+    }
   }
 }

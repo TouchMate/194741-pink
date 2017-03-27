@@ -1,6 +1,7 @@
 .main-nav {
+//  width: 280px;
+  margin: 0 auto;
   background-color: $deepblue;
-  font-family: "OpenSans";
   font-size: 18px;
   line-height: 32px;
   font-weight: 800;
@@ -11,8 +12,38 @@
     padding: 0;
     margin: 0;
   }
+  &__item {
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #000001;
+  }
   &__link {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    text-align: center;
     text-decoration: none;
     color: #ffffff;
+  }
+}
+
+@media("$bp-tablet") {
+  .main-nav {
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
+@media("$bp-desktop") {
+  .main-nav {
+    width: 640px;
+    margin-right: 0;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+  .main-nav__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
   }
 }

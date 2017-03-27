@@ -1,8 +1,9 @@
 .page-main-header {
-
-  paddin-top:34px;
+  padding-left: 20px;
+  padding-right: 20px;
+  @include container();
+  padding-top: 34px;
   min-height: 170px;
-  font-family: "OpenSans";
   background-image: url(../../img/bg-back-mobile@1x.jpg);
   background-color: $deepblue;
   background-position: center;
@@ -13,5 +14,13 @@
     font-size: 24px;
     font-weight: 200;
     color: #ffffff;
+    text-align: center;
+  }
+}
+
+@media("bp-desktop") {
+  .page-main-header {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
