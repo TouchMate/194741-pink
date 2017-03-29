@@ -11,16 +11,17 @@
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
+
       <div class="page-header__logo">
         PINK
       </div>
-      <span class="main-nav__toggle">
-    </span>
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <nav class="main-nav  main-nav--opened main-nav--nojs">
+        <span class="main-nav__toggle">
+        </span>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link">Главная</a>
+              <a class="main-nav__link main-nav__link--active">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="photo.html">Фотографии</a>
@@ -32,6 +33,7 @@
               <a class="main-nav__link" href="#">HTML Academy</a>
             </li>
           </ul>
+
         </div>
       </nav>
     </div>
@@ -42,20 +44,24 @@
         <div class="app-download__image"></div>
       </div>
       <div class="app-download-type">
+        <b class="app-download-type__promo">Взгляните
+на жизнь
+иначе!</b>
         <a class="btn app-download-btn" href="#">Скачать приложение</a>
+
         <ul class="app-download-type__list">
           <li class="app-download-type__item">
-            <a class="app-download-type__link" href="#">
-              <span class="visually-hidden">Apple</span>
+            <a class="app-download-type__link app-download-type__link--iphone" href="#">
+              <span class="visually-hidden">iPhone</span>
             </a>
           </li>
           <li class="app-download-type__item">
-            <a class="app-download-type__link" href="#">
+            <a class="app-download-type__link app-download-type__link--android" href="#">
               <span class="visually-hidden">Android</span>
             </a>
           </li>
           <li class="app-download-type__item">
-            <a class="app-download-type__link" href="#">
+            <a class="app-download-type__link app-download-type__link--windows" href="#">
               <span class="visually-hidden">Windows Phone</span>
             </a>
           </li>
@@ -65,7 +71,7 @@
     </div>
     <section class="advantages">
       <div class="advantages__header">
-        <p class="advantages__slogan advantages__slogan--first">Устали от серости мегаполиса?
+        <p class="advantages__slogan">Устали от серости мегаполиса?
         </p>
         <p class="advantages__slogan">Нам есть, что вам предложить!
         </p>
@@ -101,9 +107,10 @@
         <div class="advantages__news-image">
         </div>
         <div class="advantages__news-article">
-          <h3 class="advantages__news-title">Эффект на 24 часа!
+          <h3 class="advantages__news-title">Эффект<br> на 24 часа!
             </h3>
-          <p class="advantages__news-content">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <p class="advantages__news-content">Британские ученые провели исследования и доказали, что положительный эффект
+            <br> от использования приложения длится целые сутки!</p>
           <a class="advantages__news-link">Узнать больше об исследовании</a>
         </div>
       </div>
@@ -215,6 +222,8 @@
         <img class="page-footer__logo" src="img/logo-htmlacademy.svg" alt="Пинк"></p>
     </footer>
   </main>
+  <script src="js/nav-toggle.js">
+  </script>
 </body>
 
 </html>

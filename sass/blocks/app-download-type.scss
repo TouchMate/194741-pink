@@ -1,44 +1,125 @@
 .app-download-type {
+  z-index: 2;
   padding: 28px 20px 33px 20px;
   background-color: #1d2631;
+  color: #ffffff;
+  &__promo {
+    display: none;
+  }
   &__list {
+    margin: 0 auto;
+    margin-bottom: 23px;
     list-style: none;
     padding: 0;
-    margin: 0;
+    text-align: center;
   }
   &__item {
     display: inline-block;
+    vertical-align: top;
+    margin-right: -4px;
+    margin-right: 31px;
+  }
+  &__item:last-child {
+    margin-right: 0;
   }
   &__link {
     text-decoration: none;
+    display: block;
+    width: 46px;
+    height: 58px;
+    background-position: center;
+    background-repeat: no-repeat;
+    &--iphone {
+      background-image: url(../../img/logo-apple.svg);
+    }
+    &--android {
+      background-image: url(../../img/logo-android.svg);
+    }
+    &--windows {
+      background-image: url(../../img/logo-microsoft.svg);
+    }
   }
   &__info {
+    padding: 0;
+    margin: 0;
+    text-align: center;
     font-size: 14px;
     line-height: 24px;
     font-weight: 200;
     color: #d3d4d5;
-    padding: 0;
-    margin: 0;
   }
 }
 
 .app-download-btn {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  width: 280px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 800px;
   color: #ffffff;
-  text-decoration: none;
+  text-transform: none;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+  &:hover {
+    color: rgba(210, 40, 86, 1);
+    background-color: rgba(255, 255, 255, 1);
+  }
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: rgba(255, 255, 255, 1);
+  }
 }
 
 @media("$bp-tablet") {
   .app-download-type {
     padding: 0;
-    width: 310px;
+    padding-top: 100px;
+    padding-bottom: 113px;
+    width: 300px;
+    background-color: transparent;
+    &__promo {
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-bottom: 40px;
+      display: block;
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: 200;
+      text-align: center;
+    }
+    &__list {
+      margin-bottom: 41px;
+    }
+    &__info {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .app-download-btn {
+    width: 300px;
+    margin-bottom: 45px;
+    font-size: 21px;
   }
 }
 
 @media("$bp-desktop") {
   .app-download-type {
-    width: 470px;
+    padding-top: 121px;
+    padding-bottom: 124px;
+    &__promo {
+      margin-bottom: 62px;
+      padding-left: 35px;
+      padding-right: 35px;
+      margin-bottom: 60px;
+      font-size: 50px;
+      line-height: 50px;
+    }
+    &__list {
+      margin-bottom: 57px;
+    }
+    .app-download-btn {
+      margin-bottom: 65px;
+    }
   }
 }

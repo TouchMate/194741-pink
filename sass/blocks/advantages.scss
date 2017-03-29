@@ -1,169 +1,210 @@
- .advantages {
-   @include container();
-   text-align: center;
-   background-color: $lightgrey;
-   &__header {
-     padding-top: 44px;
-     padding-left: 20px;
-     padding-right: 20px;
-     background-color: $white;
-     color: #283645;
-     padding-bottom: 115px;
-   }
-   &__slogan {
-     padding: 0;
-     margin: 0;
-     font-size: 24px;
-     font-weight: 200;
-     color: #283645;
-   }
-   &__slogan--first {
-     margin-bottom: 32px;
-   }
-   &__wrapper {
-     padding-left: 20px;
-     padding-right: 20px;
-   }
-   &__list {
-     padding-top: 86px;
-     padding-bottom: 7px;
-   }
-   &__item {
-     margin-bottom: 38px;
-   }
-   &__title {
-     padding: 0;
-     margin: 0;
-     margin-bottom: 16px;
-     font-size: 18px;
-     line-height: 24px;
-     font-weight: 800;
-     color: #000000;
-   }
-   &__content {
-     padding: 0;
-     margin: 0;
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 24px;
-     color: #283645;
-   }
-   &__images {
-     margin: 0;
-     padding: 0;
-   }
-   &__image {
-     min-height: 266px;
-     padding-left: 20px;
-     padding-right: 20px;
-     background-image: url(../../img/iphone-screen-mobile@1x.png);
-     background-repeat: no-repeat;
-     background-position: center top;
-   }
-   &__image:nth-child(2) {
-     display: none;
-   }
-   &__image:nth-child(3) {
-     display: none;
-   }
-   &__news {
-     display: none;
-   }
- }
+.advantages {
+  @include container();
+  text-align: center;
+  background-color: $lightgrey;
+  &__header {
+    padding-top: 44px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 115px;
+    background-color: $white;
+    color: #283645;
+    font-size: 24px;
+    font-weight: 200;
+  }
+  &__slogan {
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 28.8px;
+  }
+  &__slogan:first-child {
+    margin-bottom: 33px;
+  }
+  &__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &__list {
+    padding-top: 86px;
+    padding-bottom: 7px;
+  }
+  &__item {
+    margin-bottom: 38px;
+  }
+  &__title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    color: #000000;
+  }
+  &__content {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
+  }
+  &__images {
+    margin: 0;
+    padding: 0;
+  }
+  &__image {
+    min-height: 266px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url(../../img/iphone-screen-mobile@1x.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  &__image:nth-child(2) {
+    display: none;
+  }
+  &__image:nth-child(3) {
+    display: none;
+  }
+  &__news {
+    display: none;
+  }
+}
 
- @media ("$bp-tablet") {
-   .advantages {
-     &__wrapper {
-       display: flex;
-       align-items: stretch;
-     }
-     &__list {
-       order: 1;
-       display: flex;
-       flex-direction: column;
-       width: 310px;
-     }
-     &__item {
-       text-align: left;
-     }
-     &__images {
-       width: 310px;
-     }
-     &__image {
-       background-position: center top;
-       padding: 0;
-       height: 100%;
-     }
-     &__news {
-       padding-left: 20px;
-       padding-right: 20px;
-       display: flex;
-       background: $white;
-     }
-     &__news-image {
-       width: 310px;
-     }
-     &__news-article {
-       padding-top: 100px;
-       padding-bottom: 117px;
-       width: 310px;
-       text-align: left;
-     }
-     &__news-title {
-       padding: 0;
-       margin: 0;
-     }
-     &__news-content {
-       padding: 0;
-       margin: 0;
-     }
-   }
- }
+@media ("$bp-tablet") {
+  .advantages {
+    &__header {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 55px;
+      padding-bottom: 47px;
+    }
+    &__slogan {
+      font-size: 40px;
+      line-height: 48px;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+    &__slogan:first-child {
+      margin-bottom: 20px;
+    }
+    &__slogan:nth-child(2) {
+      padding-left: 146px;
+      padding-right: 146px;
+    }
+    &__wrapper {
+      display: flex;
+      align-items: stretch;
+    }
+    &__list {
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      width: 310px;
+    }
+    &__item {
+      text-align: left;
+    }
+    &__images {
+      width: 310px;
+    }
+    &__image {
+      background-position: center top;
+      padding: 0;
+      height: 100%;
+    }
+    &__news {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: flex;
+      background: $white;
+    }
+    &__news-image {
+      width: 310px;
+    }
+    &__news-article {
+      padding-top: 100px;
+      padding-bottom: 117px;
+      width: 310px;
+      text-align: left;
+    }
+    &__news-title {
+      padding: 0;
+      margin: 0;
+    }
+    &__news-content {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
 
- @media ("$bp-desktop") {
-   .advantages {
-     &__wrapper {
-       flex-direction: column;
-       padding-left: 10px;
-       padding-right: 10px;
-     }
-     &__list {
-       order: 1;
-       display: flex;
-       flex-direction: row;
-       width: auto;
-     }
-     &__item {
-       text-align: center;
-     }
-     &__images {
-       display: flex;
-       flex-direction: row;
-       width: auto;
-     }
-     &__image {
-       background-position: center top;
-       padding: 0;
-       height: 100%;
-       width: 300px;
-     }
-     &__image:nth-child(2) {
-       display: inherit;
-     }
-     &__image:nth-child(3) {
-       display: inherit;
-     }
-     &__news {
-       padding-left: 10px;
-       padding-right: 10px;
-       display: flex;
-       background: none;
-     }
-     &__news-image {
-       width: 370px;
-     }
-     &__news-article {
-       width: 570px;
-     }
-   }
- }
+@media ("$bp-desktop") {
+  .advantages {
+    &__header {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 75px;
+      padding-bottom: 70px;
+      font-size: 50px;
+      line-height: 60px;
+    }
+    &__slogan {
+      padding: 0;
+      margin-bottom: 15px;
+    }
+    &__slogan:first-child {
+      padding-left: 107px;
+      padding-right: 107px;
+    }
+    &__slogan:nth-child(2) {
+      padding-left: 210px;
+      padding-right: 264px;
+    }
+    &__wrapper {
+      flex-direction: column;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &__list {
+      order: 1;
+      display: flex;
+      flex-direction: row;
+      width: auto;
+    }
+    &__item {
+      text-align: center;
+    }
+    &__images {
+      display: flex;
+      flex-direction: row;
+      width: auto;
+    }
+    &__image {
+      background-position: center top;
+      padding: 0;
+      height: 100%;
+      width: 300px;
+    }
+    &__image:nth-child(2) {
+      display: inherit;
+    }
+    &__image:nth-child(3) {
+      display: inherit;
+    }
+    &__news {
+      padding-left: 10px;
+      padding-right: 10px;
+      display: flex;
+      background: none;
+    }
+    &__news-image {
+      width: 370px;
+    }
+    &__news-article {
+      width: 570px;
+    }
+  }
+}

@@ -1,15 +1,3 @@
-body {
-  min-width: 320px;
-  font-family: "OpenSans";
-  line-height: 30px;
-  font-size: 14px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 *,
 *::before,
 *::after {
@@ -22,4 +10,27 @@ html {
 
 .content-box-component {
   box-sizing: content-box;
+}
+
+body {
+  min-width: 320px;
+  font-family: "OpenSans";
+  line-height: 30px;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
