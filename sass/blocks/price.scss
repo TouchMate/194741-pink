@@ -58,6 +58,7 @@
     text-transform: uppercase;
     &--empty {
       background: none;
+      border: none;
     }
   }
   .price__item-head--hit::before {

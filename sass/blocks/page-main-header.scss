@@ -3,7 +3,8 @@
   padding-right: 20px;
   @include container();
   padding-top: 34px;
-  min-height: 170px;
+  padding-bottom: 85px;
+  min-height: 171px;
   background-image: url(../../img/bg-back-mobile@1x.jpg);
   background-color: $deepblue;
   background-position: center;
@@ -12,9 +13,24 @@
     padding: 0;
     margin: 0;
     font-size: 24px;
+    line-height: 29px;
     font-weight: 200;
     color: #ffffff;
     text-align: center;
+  }
+}
+
+@media("$bp-tablet") {
+  .page-main-header {
+    padding-top: 78px;
+    padding-bottom: 146px;
+    min-height: 332px;
+    &__title {
+      padding-left: 135px;
+      padding-right: 135px;
+      font-size: 50px;
+      line-height: 60px;
+    }
   }
 }
 
@@ -22,5 +38,12 @@
   .page-main-header {
     padding-left: 10px;
     padding-right: 10px;
+    min-height: 286px;
+    &__title {
+      padding-left: 290px;
+      padding-right: 290px;
+      font-size: 50px;
+      line-height: 60px;
+    }
   }
 }

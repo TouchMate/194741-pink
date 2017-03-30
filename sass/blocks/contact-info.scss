@@ -1,7 +1,7 @@
 .contact-info {
   @include container();
   text-align: center;
-  padding-top: 48px;
+  padding-top: 45px;
   &__container {
     padding-left: 20px;
     padding-right: 20px;
@@ -9,42 +9,53 @@
   }
   &__title {
     margin: 0;
-    margin-bottom: 36px;
+    margin-bottom: 40px;
     padding: 0;
     font-size: 24px;
+    line-height: 29px;
     color: #283645;
-    font-weight: 100;
+    font-weight: 200;
   }
   &__phone {
     padding: 0;
     margin: 0;
+    margin-bottom: 24px;
     font-size: 18px;
+    line-height: 22px;
     font-weight: 800;
     color: #283645;
   }
   &__phone-number {
+    display: block;
     text-decoration: none;
     font-size: 24px;
-    font-weight: 100;
+    line-height: 29px;
+    font-weight: 200;
     color: #d22856;
   }
   &__email {
+    display: block;
     padding: 0;
     margin: 0;
+    margin-bottom: 24px;
     font-size: 18px;
+    line-height: 22px;
     font-weight: bolder;
     color: #283645;
   }
   &__email-address {
     text-decoration: none;
     font-size: 24px;
+    line-height: 29px;
     font-weight: 100;
     color: #d22856;
   }
   &__address {
+    display: block;
     padding: 0;
     margin: 0;
     font-size: 18px;
+    line-height: 22px;
     font-weight: 800;
     color: #283645;
     font-style: normal;
@@ -56,6 +67,7 @@
   &__address-full {
     text-decoration: none;
     font-size: 24px;
+    line-height: 29px;
     font-weight: 100;
     color: #d22856;
   }
@@ -71,7 +83,7 @@
 
 @media ("$bp-tablet") {
   .contact-info {
-    padding-top: 51px;
+    padding-top: 52px;
     &__container {
       padding-left: 0px;
       padding-right: 0px;
@@ -87,10 +99,10 @@
       padding-left: 120px;
       padding-right: 120px;
       margin: 0;
-      margin-bottom: 45px;
+      margin-bottom: 50px;
       font-size: 40px;
-      line-height: 40px;
-      flex-shrink: 1;
+      line-height: 48px;
+      font-weight: 200;
     }
     &__phone {
       padding: 0;
@@ -98,17 +110,27 @@
       margin-right: 20px;
       flex-basis: 300px;
     }
+    &__phone-number {
+      padding: 0;
+    }
     &__email {
       padding: 0;
       margin: 0;
       flex-basis: 300px;
+    }
+    &__email b {
+      margin-top: -5px;
+    }
+    &__email-address {
+      padding: 0;
+      margin: 0;
     }
     &__address {
       padding: 0;
       padding-left: 205px;
       padding-right: 205px;
       margin: 0;
-      margin-top: 27px;
+      margin-top: 52px;
       flex-basis: 620px;
     }
   }
@@ -116,7 +138,7 @@
 
 @media("$bp-desktop") {
   .contact-info {
-    padding-top: 73px;
+    padding-top: 71px;
     &__container {
       display: flex;
       padding-left: 10px;
@@ -130,16 +152,24 @@
       padding-left: 200px;
       padding-right: 200px;
       font-size: 50px;
+      line-height: 60px;
     }
     &__phone {
       margin: 0;
       flex-basis: 200px;
       flex-grow: 1;
     }
+    &__phone-number {
+      margin-top: 26px;
+    }
     &__email {
       flex-basis: 200px;
       flex-grow: 1;
       order: 1;
+    }
+    &__email-address {
+      display: block;
+      margin-top: 26px;
     }
     &__address {
       padding: 0;
@@ -149,6 +179,10 @@
       flex-basis: 200px;
       flex-grow: 1;
       box-sizing: border-box;
+    }
+    &__address-full {
+      display: block;
+      margin-top: 26px;
     }
   }
 }
