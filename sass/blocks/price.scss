@@ -1,6 +1,8 @@
 .price {
   padding-top: 93px;
+  padding-bottom: 100px;
   @include container();
+  position: relative;
   background-color: #f2f2f2;
   &__wrapper {
     padding-left: 20px;
@@ -16,8 +18,17 @@
     margin: 0;
     width: 280px;
   }
+  &__item-futures {
+    font-size: 14px;
+    line-height: 30px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 22px;
+  }
   &__item-head {
     padding: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
     margin: 0;
     background-color: #283645;
     font-size: 18px;
@@ -43,6 +54,35 @@
     color: #283645;
     text-transform: uppercase;
     background-color: $white;
+  }
+}
+
+.price__sld-control {
+  position: absolute;
+  bottom: 47px;
+  left: 50%;
+  width: 140px;
+  height: 12px;
+  text-align: center;
+  border: 1px dotted green;
+  z-index: 1000;
+  margin-left: -70px;
+}
+
+.price__toggles {
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  margin: 0 9px;
+  background: #b5b9be;
+  border: 3px solid #b5b9be;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
+  &--active {
+    background: #ffffff;
+    border: 5px solid #354250;
   }
 }
 
