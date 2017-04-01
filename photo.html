@@ -63,8 +63,6 @@
         </div>
       </figure>
     </section>
-
-
     <section class="photo-album">
       <figure class="photo-album__item">
         <a class="photo-album__img-link" href="#"><img class="photo-album__img" src="img/photo-1-mobile@1x.jpg" alt="Фото пользователя"></a>
@@ -98,7 +96,6 @@
           </span>
         </cite>
           <figcaption class="photo-album__user-comment">Здесь могла быть ваша цитата о высоком и вечном.
-
           </figcaption>
           <span class="photo-album__item-likes">Нравится: 215</span>
         </div>
@@ -142,7 +139,7 @@
     </section>
     <article class="photo-upload">
       <div class="photo-upload__title-container">
-        <h3 class="photo-upload__title">Затмите их всех!
+        <h3 class="photo-upload__title">Затмите их всех!<br>
 Выкладывайте все, что накопилось в телефоне!</h3>
       </div>
       <div class="photo-upload-app">
@@ -152,13 +149,20 @@
             <div class="photo-upload-app__crop"></div>
             <div class="photo-upload-app__color"></div>
             <div class="photo-upload-app__brightness"></div>
-            <div class="scale photo-upload-app__scale">
+            <div class="scale photo-upload-app__scale--crop">
+              <div class="bar photo-upload__bar"></div>
+            </div>
+            <div class="scale photo-upload-app__scale--color">
+              <div class="bar photo-upload__bar"></div>
+            </div>
+            <div class="scale photo-upload-app__scale--brightness">
               <div class="bar photo-upload__bar"></div>
             </div>
           </div>
           <div class="photo-upload-app__btns">
-            <button class="btn photo-upload-app__btn-publish" type="submit">Запостить</button>
-            <button class="btn photo-upload-app__btn-cancel" type="reset">Отмена</button>
+            <button class="btn
+            photo-upload-app__btn photo-upload-app__btn--publish" type="submit">Запостить</button>
+            <button class="btn photo-upload-app__btn photo-upload-app__btn--cancel" type="reset">Отмена</button>
           </div>
         </div>
       </div>
@@ -170,13 +174,13 @@
     </div>
     <ul class="page-footer-social  social-links">
       <li class="page-footer-social__item">
-        <a class="social-link  page-footer-social__link--tw" href="#">Vkontakte</a>
+        <a class="social-link  page-footer-social__link--tw" href="#"><span class="visually-hidden">Vkontakte</span></a>
       </li>
       <li class="page-footer-social__item">
-        <a class="social-link  page-footer-social__link--fb" href="#">Facebook</a>
+        <a class="social-link  page-footer-social__link--fb" href="#"><span class="visually-hidden">Faceboo</span></a>
       </li>
       <li class="page-footer-social__item">
-        <a class="social-link  page-footer-social__link--yt" href="#">Twitter</a>
+        <a class="social-link  page-footer-social__link--yt" href="#"><span class="visually-hidden">Twitter</span></a>
       </li>
     </ul>
     <p class="page-footer__copyright">Разработано

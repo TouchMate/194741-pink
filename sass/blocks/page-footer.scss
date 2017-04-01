@@ -11,15 +11,55 @@
   background-color: $white;
   text-align: center;
   &__copyright {
+    display: block;
     vertical-align: top;
+    margin-top: 39px;
   }
   &__logo {
     vertical-align: middle;
   }
 }
 
-.page-footer--hidden {
-  display: none;
+.logo-bottom {
+  margin-bottom: 40px;
+}
+
+.page-footer-social {
+  &__item {
+    display: inline-block;
+    margin-right: 8px;
+  }
+  &__link {
+    &--tw {
+      background-image: url("../../img/icon-twitter.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &--fb {
+      background-image: url("../../img/icon-facebook.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &--yt {
+      background-image: url("../../img/icon-youtube.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.social-link {
+  display: block;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  border: 3px solid rgba(233, 235, 236, 1);
+  &:hover {
+    border-color: rgba(54, 67, 81, 1);
+  }
+  &:active {
+    border-color: rgba(54, 67, 81, 0.1);
+  }
 }
 
 @media("$bp-tablet") {
@@ -28,14 +68,18 @@
     padding-bottom: 37px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .logo-bottom {
+    margin: 0;
     flex-basis: 150px;
   }
   .page-footer-social {
+    margin: 0;
     flex-basis: 320px;
   }
   .page-footer__copyright {
+    margin: 0;
     flex-basis: 150px;
   }
 }
