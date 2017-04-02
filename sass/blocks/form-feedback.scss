@@ -2,17 +2,20 @@
   border: none;
   margin: 0;
   padding: 0;
-  padding-top: 40px;
+  padding-top: 35px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 48px;
   &__title {
+    margin-bottom: 12px;
     border: none;
     float: left;
     width: 100%;
     color: $darkred;
     text-align: center;
-    text-transform: lowercase;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
   }
   &__input {
     width: 280px;
@@ -22,6 +25,7 @@
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 14px;
     line-height: 30px;
     resize: none;
   }
@@ -29,18 +33,24 @@
 
 @media("$bp-tablet") {
   .form-feedback {
+    margin-bottom: 68px;
     order: 5;
+    padding-top: 33px;
+    padding-bottom: 52px;
     padding-left: 59px;
     padding-right: 59px;
     border: 2px solid #e5e5e5;
     background-color: $white;
     &__title {
+      padding-left: 40px;
+      padding-right: 40px;
       float: none;
       width: auto;
       text-align: center;
     }
     &__input {
       width: 100%;
+      font-size: 18px;
     }
   }
 }
@@ -48,5 +58,6 @@
 @media("$bp-desktop") {
   .form-feedback {
     width: 100%;
+    padding-top: 38px;
   }
 }

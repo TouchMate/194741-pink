@@ -4,47 +4,77 @@
   padding-bottom: 42px;
   padding-left: 20px;
   padding-right: 20px;
+  text-align: left;
   &__title {
     display: none;
   }
   &__label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 23px;
     display: block;
     color: $darkred;
     text-transform: uppercase;
   }
   &__input {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 15px;
     width: 100%;
     font-size: 18px;
+    line-height: 30px;
     color: $deepblue;
+    border: 2px solid rgba(229, 229, 229, 1);
+    border-radius: 3px;
+    &:first-of-type {
+      margin-bottom: 21px;
+    }
   }
 }
 
 @media("$bp-tablet") {
   .form-contacts {
     padding: 0;
+    margin-bottom: 57px;
     order: 3;
     border: 2px solid #e5e5e5;
     background-color: $white;
-    padding-left: 59px;
-    padding-right: 59px;
     &__title {
       padding-left: 33px;
       padding-right: 33px;
       display: block;
       text-align: center;
       font-size: 14px;
+      text-transform: uppercase;
       color: $darkred;
     }
     &__container {
+      padding-top: 45px;
+      padding-left: 60px;
+      padding-right: 58px;
+      padding-bottom: 31px;
       display: flex;
       justify-content: center;
       flex-direction: column-reverse;
     }
-    &__label:nth-child(1) {
-      order: 1;
+    &__label {
+      width: 100%;
+      &:nth-child(1) {
+        order: 1;
+        margin-bottom: 31px;
+      }
     }
-    &__input:nth-child(2) {
-      order: 2;
+    &__input {
+      width: 100%;
+      margin-bottom: 11px;
+      border-right: 62px solid #e5e5e5;
+      &:first-of-type {
+        margin-bottom: 11px;
+      }
+      &:nth-child(2) {
+        order: 2;
+      }
     }
   }
 }
@@ -52,5 +82,37 @@
 @media ("$bp-desktop") {
   .form-contacts {
     width: 100%;
+    &__container {
+      padding-top: 42px;
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-bottom: 16px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__label {
+      margin: 0;
+      width: 375px;
+      &:nth-child(1) {
+        order: 0;
+        margin-bottom: 0px;
+      }
+      &:nth-child(2) {
+        order: 0;
+      }
+    }
+    &__input {
+      margin: 0;
+      margin-bottom: 17px;
+      width: 375px;
+      &:first-of-type {
+        margin-bottom: 17px;
+        order: -2;
+      }
+      &:nth-of-type(2) {
+        order: -1;
+      }
+    }
   }
 }

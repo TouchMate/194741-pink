@@ -11,7 +11,6 @@
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-
       <div class="page-header__logo">
         PINK
       </div>
@@ -20,31 +19,31 @@
         </span>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="photo.html">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link">Конкурс</a>
+              <a class="main-nav__link main-nav__link--active">Конкурс</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">HTML Academy</a>
             </li>
           </ul>
-
         </div>
       </nav>
     </div>
   </header>
   <main>
-    <div class="page-main-header">
-      <h2 class="page-main-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    <div class="page-main-header page-main-header--form">
+      <h2 class="page-main-header__title page-main-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </div>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-      <h3 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+      <h3 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form__title--instructions">Пожалуйста, заполните форму ниже:</span>
       </h3>
+
       <fieldset class="form-name">
         <div class="form-name__container">
           <label class="form-name__label" for="field-surname">Фамилия:</label>
@@ -84,12 +83,14 @@
       <fieldset class="form-app-type">
         <legend class="form-app-type__title">С каким приложением путешествовали?
         </legend>
-        <input class="form-app-type__input" type="radio" name="app-type" id="field-ios" checked>
-        <label class="form-app-type__label" for="field-ios">Pink для iOS</label>
-        <input class="form-app-type__input" type="radio" name="app-type" id="field-android">
-        <label class="form-app-type__label" for="field-android">Pink на Android</label>
-        <input class="form-app-type__input" type="radio" name="app-type" id="field-windows">
-        <label class="form-app-type__label" for="field-windows">Windows Phone</label>
+        <div class="form-app-type__container">
+          <input class="form-app-type__input" type="radio" name="app-type" id="field-ios" checked>
+          <label class="form-app-type__label" for="field-ios">Pink для iOS</label>
+          <input class="form-app-type__input" type="radio" name="app-type" id="field-android">
+          <label class="form-app-type__label" for="field-android">Pink на Android</label>
+          <input class="form-app-type__input" type="radio" name="app-type" id="field-windows">
+          <label class="form-app-type__label" for="field-windows">Windows Phone</label>
+        </div>
       </fieldset>
       <fieldset class="form-feedback">
         <legend class="form-feedback__title">Опишите свои эмоции</legend>
@@ -97,7 +98,7 @@
       </fieldset>
       <div class="form__control">
         <button class="btn form__btn" type="submit">Отправить форму</button>
-        <span class="form__requirement"><span class="form__requirement-star">*</span> — обязательные поля</span>
+        <span class="form__requirement"><span class="form__requirement-star">*</span> — обязательные поля<span class="form__requirement--full">для заполнения поля</span></span>
       </div>
     </form>
   </main>
