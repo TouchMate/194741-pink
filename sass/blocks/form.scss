@@ -1,78 +1,117 @@
-      .form {
-        @include reset;
-        @include container();
-        font-family: "OpenSans";
-        font-size: 14px;
-        line-height: 30px;
-        color: $deepblue;
-        background-color: $white;
-        &__title {
-          padding-left: 20px;
-          padding-right: 20px;
-          font-size: 14px;
-          font-weight: 200;
-          text-align: center;
-          padding-top: 47px;
-          padding-bottom: 43px;
-        }
-        &__control {
-          order: 6;
-          padding-left: 20px;
-          padding-right: 20px;
-        }
-        &__btn {
-          width: 280px;
-          background-color: $green;
-          line-height: 30px;
-          font-weight: 800;
-          border: none;
-          color: red;
-        }
-        &__requirement {
-          display: block;
-          margin-left: 20px;
-          margin-right: 20px;
-          margin-top: 36px;
-          color: red;
-          order: 7;
-        }
-        &__requirement-star {
-          color: $darkred;
-        }
-      }
+.form {
+  @include reset;
+  @include container();
+  font-family: "OpenSans";
+  font-size: 14px;
+  line-height: 30px;
+  color: $deepblue;
+  background-color: $white;
+  text-align: center;
+  &__title {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 47px;
+    padding-bottom: 43px;
+    &--instructions {
+      display: none;
+    }
+  }
+  &__control {
+    order: 6;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &__btn {
+    width: 280px;
+    background-color: $green;
+    line-height: 30px;
+    font-weight: 800;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    &:hover {
+      background-color: rgba(28, 155, 94, 1);
+    }
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+    &:desabled {
+      background-color: rgba(229, 229, 229, 1);
+    }
+  }
+  &__requirement {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 36px;
+    color: red;
+    order: 7;
+    color: #283645;
+  }
+  &__requirement-star {
+    color: $darkred;
+  }
+  &__requirement--full {
+    display: none;
+  }
+}
 
-      @media("$bp-tablet") {
-        .form {
-          display: flex;
-          flex-direction: column;
-          padding-left: 20px;
-          padding-right: 20px;
-          &__control {
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          &__btn {
-            width: 300px;
-            margin: 0;
-          }
-          &__requirement {
-            display: inherit;
-          }
-        }
+@media("$bp-tablet") {
+  .form {
+    margin-bottom: 46px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    &__title {
+      font-size: 18px;
+      padding-left: 72px;
+      padding-right: 72px;
+      padding-top: 96px;
+      padding-bottom: 73px;
+      &--instructions {
+        display: initial;
       }
+    }
+    &__control {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    &__btn {
+      width: 300px;
+      margin: 0;
+    }
+    &__requirement {
+      display: inherit;
+    }
+  }
+}
 
-      @media("$bp-desktop") {
-        .form {
-          padding-left: 10px;
-          padding-right: 10px;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          &__control {
-            width: 100%;
-          }
-        }
-      }
+@media("$bp-desktop") {
+  .form {
+    margin-bottom: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__control {
+      width: 100%;
+    }
+    &__title {
+      padding-left: 92px;
+      padding-right: 92px;
+      padding-top: 112px;
+      padding-bottom: 76px;
+    }
+    &__requirement--full {
+      display: initial;
+    }
+  }
+}

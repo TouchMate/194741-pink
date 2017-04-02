@@ -1,26 +1,25 @@
 .photo-upload {
   @include container();
-  padding-top: 47px;
-  font-family: "OpenSans";
-  font-size: 14px;
-  line-height: 30px;
-  color: #283645;
   &__title-container {
     padding-left: 20px;
     padding-right: 20px;
     background-color: $white;
   }
+  &__title-container {
+    padding-top: 41px;
+    padding-left: 12px;
+    padding-right: 15px;
+    padding-bottom: 44px;
+    text-align: center;
+  }
   &__title {
     margin: 0;
     padding: 0;
     font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+    font-size: 14px;
     font-weight: 400;
-  }
-  &__title-container {
-    padding-top: 48px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-bottom: 46px;
     text-align: center;
   }
 }
@@ -28,10 +27,13 @@
 @media("$bp-tablet") {
   .photo-upload {
     &__title-container {
-      padding-top: 66px;
+      padding-top: 69px;
       padding-left: 100px;
       padding-right: 100px;
-      padding-bottom: 72px;
+      padding-bottom: 71px;
+    }
+    &__title {
+      font-size: 18px;
     }
   }
 }

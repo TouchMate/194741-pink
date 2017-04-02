@@ -14,13 +14,13 @@
       <div class="page-header__logo">
         PINK
       </div>
-      <span class="main-nav__toggle">
-    </span>
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <nav class="main-nav  main-nav--opened main-nav--nojs">
+        <span class="main-nav__toggle">
+        </span>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link">Главная</a>
+              <a class="main-nav__link main-nav__link--active">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="photo.html">Фотографии</a>
@@ -42,20 +42,24 @@
         <div class="app-download__image"></div>
       </div>
       <div class="app-download-type">
+        <b class="app-download-type__promo">Взгляните
+на жизнь
+иначе!</b>
         <a class="btn app-download-btn" href="#">Скачать приложение</a>
+
         <ul class="app-download-type__list">
           <li class="app-download-type__item">
-            <a class="app-download-type__link" href="#">
-              <span class="visually-hidden">Apple</span>
+            <a class="app-download-type__link app-download-type__link--iphone" href="#">
+              <span class="visually-hidden">iPhone</span>
             </a>
           </li>
           <li class="app-download-type__item">
-            <a class="app-download-type__link" href="#">
+            <a class="app-download-type__link app-download-type__link--android" href="#">
               <span class="visually-hidden">Android</span>
             </a>
           </li>
           <li class="app-download-type__item">
-            <a class="app-download-type__link" href="#">
+            <a class="app-download-type__link app-download-type__link--windows" href="#">
               <span class="visually-hidden">Windows Phone</span>
             </a>
           </li>
@@ -65,7 +69,7 @@
     </div>
     <section class="advantages">
       <div class="advantages__header">
-        <p class="advantages__slogan advantages__slogan--first">Устали от серости мегаполиса?
+        <p class="advantages__slogan">Устали от серости мегаполиса?
         </p>
         <p class="advantages__slogan">Нам есть, что вам предложить!
         </p>
@@ -82,12 +86,14 @@
             <h3 class="advantages__title">Меняет мир вокруг
           </h3>
             <p class="advantages__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+
             </p>
           </div>
           <div class="advantages__item advantages__item--last">
             <h3 class="advantages__title">Заводит новых друзей
           </h3>
             <p class="advantages__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+
             </p>
           </div>
         </div>
@@ -101,9 +107,10 @@
         <div class="advantages__news-image">
         </div>
         <div class="advantages__news-article">
-          <h3 class="advantages__news-title">Эффект на 24 часа!
+          <h3 class="advantages__news-title">Эффект<br> на 24 часа!
             </h3>
-          <p class="advantages__news-content">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <p class="advantages__news-content">Британские ученые провели исследования и доказали, что положительный эффект
+            <br> от использования приложения длится целые сутки!</p>
           <a class="advantages__news-link">Узнать больше об исследовании</a>
         </div>
       </div>
@@ -117,12 +124,14 @@
           <cite class="reviews__author-name">Николай Петров<span class="reviews__author-info">25 лет, водитель трамвая</span></cite>
           <p class="reviews__author-content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
-        <label class="reviews__toggles slider__toggles" for="reviews-input-1">
-        </label>
-        <label class="reviews__toggles slider__toggles" for="reviews-input-2">
-        </label>
-        <label class="reviews__toggles slider__toggles" for="reviews-input-3">
-        </label>
+        <div class="reviews__sld-controls slider-controls">
+          <label class="reviews__toggles reviews__toggles--active slider__toggles" for="reviews-input-1">
+          </label>
+          <label class="reviews__toggles slider__toggles" for="reviews-input-2">
+          </label>
+          <label class="reviews__toggles  slider__toggles" for="reviews-input-3">
+          </label>
+        </div>
       </div>
     </div>
     <div class="price">
@@ -137,32 +146,40 @@
             <tr class="price__item-row">
               <th class="price__item-head price__item-head--empty"></th>
               <th class="price__item-head">База
-                <br>
                 <br><span class="price__item-currency">1,99 USD</span></th>
-              <th class="price__item-head">Стандарт
-                <br>
+              <th class="price__item-head price__item-head--hit">Стандарт
                 <br><span class="price__item-currency">3,99 USD</span></th>
               <th class="price__item-head">Анлим
-                <br>
                 <br><span class="price__item-currency">9,99 USD</span></th>
             </tr>
             <tr class="price__item-row">
-              <td class="price__item-futures">Розовый фильтр</td>
+              <th class="price__item-futures">Розовый фильтр</th>
+              <td class="price__item-point"></td>
+              <td class="price__item-point"></td>
+              <td class="price__item-point"></td>
             </tr>
             <tr class="price__item-row">
-              <td class="price__item-futures">Смайлики</td>
+              <th class="price__item-futures">Смайлики</th>
+              <td class="price__item-point"></td>
+              <td class="price__item-point"></td>
+              <td class="price__item-point"></td>
             </tr>
             <tr class="price__item-row">
-              <td class="price__item-futures">Комментарии</td>
+              <th class="price__item-futures">Комментарии</th>
+              <td class="price__item-point"></td>
+              <td class="price__item-point"></td>
+              <td class="price__item-point"></td>
             </tr>
           </table>
         </div>
-        <label class="price__toggles slider__toggles" for="price-input-1">
-        </label>
-        <label class="price__toggles slider__toggles" for="price-input-2">
-        </label>
-        <label class="price__toggles slider__toggles" for="price-input-3">
-        </label>
+        <div class="price__sld-control">
+          <label class="price__toggles price__toggles--active slider__toggles" for="price-input-1">
+          </label>
+          <label class="price__toggles slider__toggles" for="price-input-2">
+          </label>
+          <label class="price__toggles slider__toggles" for="price-input-3">
+          </label>
+        </div>
       </div>
     </div>
 
@@ -187,7 +204,7 @@
 
         <address class="contact-info__address">
       <p class="contact-info__address-content">
-      <b>Приезжайте в гости:</b>
+        <b>Приезжайте в гости:</b></br>
       <a class="contact-info__address-full" href="#">ул. Большая
       Конюшенная, 19/8</a>
       </p>
@@ -202,19 +219,21 @@
       </div>
       <ul class="page-footer-social  social-links">
         <li class="page-footer-social__item">
-          <a class="social-link  page-footer-social__link--tw" href="#">Vkontakte</a>
+          <a class="social-link  page-footer-social__link--tw" href="#"><span class="visually-hidden">Vkontakte</span></a>
         </li>
         <li class="page-footer-social__item">
-          <a class="social-link  page-footer-social__link--fb" href="#">Facebook</a>
+          <a class="social-link  page-footer-social__link--fb" href="#"><span class="visually-hidden">Faceboo</span></a>
         </li>
         <li class="page-footer-social__item">
-          <a class="social-link  page-footer-social__link--yt" href="#">Twitter</a>
+          <a class="social-link  page-footer-social__link--yt" href="#"><span class="visually-hidden">Twitter</span></a>
         </li>
       </ul>
       <p class="page-footer__copyright">Разработано
         <img class="page-footer__logo" src="img/logo-htmlacademy.svg" alt="Пинк"></p>
     </footer>
   </main>
+  <script src="js/nav-toggle.js">
+  </script>
 </body>
 
 </html>

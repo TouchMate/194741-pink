@@ -1,26 +1,55 @@
 .page-main-header {
   padding-left: 20px;
   padding-right: 20px;
-  @include container();
   padding-top: 34px;
-  min-height: 170px;
+  padding-bottom: 85px;
+  @include container();
+  min-height: 171px;
   background-image: url(../../img/bg-back-mobile@1x.jpg);
   background-color: $deepblue;
   background-position: center;
   background-repeat: no-repeat;
+  text-align: center;
+  &--form {
+    padding-bottom: 56px;
+  }
   &__title {
     padding: 0;
     margin: 0;
     font-size: 24px;
+    line-height: 29px;
     font-weight: 200;
     color: #ffffff;
     text-align: center;
   }
 }
 
-@media("bp-desktop") {
+@media("$bp-tablet") {
+  .page-main-header {
+    padding-top: 78px;
+    padding-bottom: 146px;
+    min-height: 332px;
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+}
+
+@media("$bp-desktop") {
   .page-main-header {
     padding-left: 10px;
     padding-right: 10px;
+    min-height: 286px;
+    &__title {
+      padding-left: 150px;
+      padding-right: 150px;
+      font-size: 50px;
+      line-height: 60px;
+      &--form {
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+    }
   }
 }

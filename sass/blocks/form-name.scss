@@ -2,16 +2,29 @@
     @include reset;
     padding-left: 20px;
     padding-right: 20px;
+    text-align: left;
+    margin-bottom: 42px;
     &__label {
       color: $darkred;
       text-transform: uppercase;
     }
     &__input {
       display: block;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      padding-left: 20px;
+      margin-bottom: 19px;
       font-size: 18px;
+      line-height: 30px;
       width: 100%;
+      border: 2px solid rgba(229, 229, 229, 1);
+      border-radius: 2px;
+    }
+    &__input:last-child {
+      margin-bottom: 0;
     }
     &__label {
+      font-size: 14px;
       padding-left: 22px;
     }
   }
@@ -21,16 +34,17 @@
       padding: 0;
       order: 1;
       &__container {
+        min-height: 294px;
         display: inline-flex;
         flex-wrap: wrap;
         align-items: center;
-        min-height: 296px;
         justify-content: space-between;
       }
       &__label {
         padding: 0;
       }
       &__input {
+        margin: 0;
         max-width: 525px;
         &--long {
           max-width: 565px;
@@ -42,14 +56,15 @@
   @media("$bp-desktop") {
     .form-name {
       order: 1;
+      width: 434px;
       &__container {
-        min-height: 286px;
-        width: 437px;
-      }
-      &__label {
-        padding: 0;
+        margin-top: 20px;
+        align-items: center;
+        align-content: space-between;
+        min-height: 296px;
       }
       &__input {
+        margin-bottom: 0px;
         max-width: 336px;
         &--long {
           max-width: 376px;

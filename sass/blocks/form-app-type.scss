@@ -6,36 +6,55 @@
   border: none;
   background-color: $lightgrey;
   &__title {
+    font-size: 14px;
+    line-height: 30px;
+    display: block;
     float: left;
-    width: 100%;
     padding: 0;
-    margin: 0;
     color: $darkred;
+    text-transform: uppercase;
+  }
+  &__container {
+    clear: both;
+    padding-top: 45px;
+    text-align: left;
   }
   &__input {
     display: none;
   }
   &__label {
+    margin-bottom: 50px;
     display: block;
     padding-left: 70px;
     font-size: 18px;
     color: $deepblue;
+    &:last-of-type {
+      margin: 0;
+    }
   }
 }
 
 @media("$bp-tablet") {
   .form-app-type {
     padding: 0;
+    margin-bottom: 57px;
     order: 2;
     border: 2px solid #e5e5e5;
     background-color: $white;
     &__title {
-      width: 320px;
       float: none;
-      padding-left: 2px;
-      padding-right: 2px;
-      border: none;
-      text-align: center;
+      line-height: 30px;
+      font-size: 14px;
+      padding-left: 23px;
+      padding-right: 23px;
+    }
+    &__container {
+      padding-top: 52px;
+      padding-left: 60px;
+      padding-bottom: 61px;
+    }
+    &__label {
+      padding-left: 61px;
     }
   }
 }
@@ -43,6 +62,14 @@
 @media("$bp-desktop") {
   .form-app-type {
     width: 436px;
-    box-sizing: border-box;
+    margin-bottom: 53px;
+  }
+  &__title {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+  &__container {
+    padding-left: 74px;
+    padding-top: 49px;
   }
 }

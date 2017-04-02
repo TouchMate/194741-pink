@@ -14,9 +14,9 @@
       <div class="page-header__logo">
         PINK
       </div>
-      <span class="main-nav__toggle">
-    </span>
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <nav class="main-nav  main-nav--opened main-nav--nojs">
+        <span class="main-nav__toggle">
+        </span>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -26,7 +26,7 @@
               <a class="main-nav__link" href="photo.html">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
+              <a class="main-nav__link main-nav__link--active">Конкурс</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">HTML Academy</a>
@@ -37,12 +37,13 @@
     </div>
   </header>
   <main>
-    <div class="page-main-header">
-      <h2 class="page-main-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    <div class="page-main-header page-main-header--form">
+      <h2 class="page-main-header__title page-main-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </div>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-      <h3 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+      <h3 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form__title--instructions">Пожалуйста, заполните форму ниже:</span>
       </h3>
+
       <fieldset class="form-name">
         <div class="form-name__container">
           <label class="form-name__label" for="field-surname">Фамилия:</label>
@@ -82,12 +83,14 @@
       <fieldset class="form-app-type">
         <legend class="form-app-type__title">С каким приложением путешествовали?
         </legend>
-        <input class="form-app-type__input" type="radio" name="app-type" id="field-ios" checked>
-        <label class="form-app-type__label" for="field-ios">Pink для iOS</label>
-        <input class="form-app-type__input" type="radio" name="app-type" id="field-android">
-        <label class="form-app-type__label" for="field-android">Pink на Android</label>
-        <input class="form-app-type__input" type="radio" name="app-type" id="field-windows">
-        <label class="form-app-type__label" for="field-windows">Windows Phone</label>
+        <div class="form-app-type__container">
+          <input class="form-app-type__input" type="radio" name="app-type" id="field-ios" checked>
+          <label class="form-app-type__label" for="field-ios">Pink для iOS</label>
+          <input class="form-app-type__input" type="radio" name="app-type" id="field-android">
+          <label class="form-app-type__label" for="field-android">Pink на Android</label>
+          <input class="form-app-type__input" type="radio" name="app-type" id="field-windows">
+          <label class="form-app-type__label" for="field-windows">Windows Phone</label>
+        </div>
       </fieldset>
       <fieldset class="form-feedback">
         <legend class="form-feedback__title">Опишите свои эмоции</legend>
@@ -95,7 +98,7 @@
       </fieldset>
       <div class="form__control">
         <button class="btn form__btn" type="submit">Отправить форму</button>
-        <span class="form__requirement"><span class="form__requirement-star">*</span> — обязательные поля</span>
+        <span class="form__requirement"><span class="form__requirement-star">*</span> — обязательные поля<span class="form__requirement--full">для заполнения поля</span></span>
       </div>
     </form>
   </main>
@@ -105,18 +108,20 @@
     </div>
     <ul class="page-footer-social  social-links">
       <li class="page-footer-social__item">
-        <a class="social-link  page-footer-social__link--tw" href="#">Vkontakte</a>
+        <a class="social-link  page-footer-social__link--tw" href="#"><span class="visually-hidden">Vkontakte</span></a>
       </li>
       <li class="page-footer-social__item">
-        <a class="social-link  page-footer-social__link--fb" href="#">Facebook</a>
+        <a class="social-link  page-footer-social__link--fb" href="#"><span class="visually-hidden">Faceboo</span></a>
       </li>
       <li class="page-footer-social__item">
-        <a class="social-link  page-footer-social__link--yt" href="#">Twitter</a>
+        <a class="social-link  page-footer-social__link--yt" href="#"><span class="visually-hidden">Twitter</span></a>
       </li>
     </ul>
     <p class="page-footer__copyright">Разработано
       <img class="page-footer__logo" src="img/logo-htmlacademy.svg" alt="Пинк"></p>
   </footer>
+  <script src="js/nav-toggle.js">
+  </script>
 </body>
 
 </html>
